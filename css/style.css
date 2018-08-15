@@ -1,0 +1,220 @@
+
+/* - - - - - - - - - - - - - - import fonts   - - - - - - - - - - - - - - - */
+
+@font-face {
+    font-family: poppinsBold;
+    src: url(../fonts/Poppins-Bold.otf);
+}
+
+
+@font-face {
+    font-family: poppinsRegular;
+    src: url(../fonts/Poppins-Regular.otf);
+}
+
+
+/* - - - - - - - - - - - - - - general styling  - - - - - - - - - - - - - - - */
+
+*, body, a {
+  font-family: poppinsRegular;
+  text-decoration: none;
+}
+
+.active {
+    background-color: #ffcb2f;
+    padding: 5px;
+    margin-right: 4%;
+}
+
+#p-container {
+  margin-left: 15%;
+  margin-top: 10%;
+  max-width: 65%;
+}
+
+p#landing-paragraph {
+  font-size: 0.7em;
+}
+
+#b-container {
+    /* border: 2px solid black; */
+    margin-top: 4vh;
+}
+
+#sign-up {
+  display: flex;
+  background-color: #ffcb2f;
+  border: none;
+  color: black;
+  padding: 20px;
+  margin-bottom: 2vh;
+  justify-content: center;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  /* display: inline-block; */
+  font-size: 14px;
+  font-family: poppinsBold;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  height: 7vh;
+  width: 100%;
+}
+
+/* - - - - - - - - - - - - landing visual asset styling   - - - - - - - - - - - - - - - */
+
+.landing-visual {
+  display: inline;
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  left:0;
+  background-color: #ffcb2f;
+  background-image: url("../photos/GIU4P.jpg");
+  background-position: center;
+}
+
+#container {
+  display: inline-block;
+  position: absolute;
+  left: 47%;
+  width: 52%;
+}
+
+#top-half {
+  position: relative;
+  /* border: 2px solid black; */
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 5%;
+}
+
+#bottom-half {
+  position: relative;
+  /* border: 2px solid black; */
+  width: 100%;
+  height: 52vh;
+  margin-top: 4vh;
+}
+
+/* - - - - - - - - - - - - logo  - - - - - - - - - - - - - - - */
+
+#logo {
+  display: inline-block;
+  position: absolute;
+  bottom:0;
+  width: 35vw;
+  height: 100%;
+  left:-5vw;
+  top: 2em;
+  background-image: url("../photos/LOGO.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+/* - - - - - - - - - - - - countdown - - - - - - - - - - - - - - - */
+
+#countdown {
+  display: inline-block;
+  position: absolute;
+  bottom: 0vh;
+  right: 2vw;
+  max-width: 280px;
+  height: 8vh;
+  transform: scale(1.1);
+}
+
+/* - - - - - - - - - - - - donate button  - - - - - - - - - - - - - - - */
+
+#btn-container {
+    width: 100%;
+    display: inline;
+    position: absolute;
+    right:0;
+    /* border: 2px solid orange; */
+}
+
+.donate {
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: #ffcb2f;
+    border: none;
+    color: black;
+    padding: 20px;
+    justify-content:center;
+    /* display: inline-block; */
+    font-size: 14px;
+    font-family: poppinsBold;
+    /* -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%; */
+    height: 3vh;
+    /* transform: scale(0.8); */
+    margin: 4px 2px;
+}
+
+#donate-btn{
+  position: absolute;
+  right: 0;
+  top: 8vh;
+  height: 6vh;
+  width: 90px;
+  max-width: 200px;
+}
+
+/* - - - - - - - - - - - - social media  - - - - - - - - - - - - - - - */
+
+.social-media {
+  display: inline-block;
+  position: absolute;
+  max-width: 40%;
+  right: 10px;
+  top: 58%;
+  height: 5vh;
+  /* border: 2px solid purple; */
+}
+
+.sm-icons {
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 0.1rem;
+  width: 3vw;
+  /* border: 3px solid red; */
+}
+
+.sm-icons#fb{
+  background-image: url(../photos/FACEBOOK.svg);
+  background-repeat: no-repeat;
+}
+
+.sm-icons#ig{
+  background-image: url(../photos/TWITTER.svg);
+  background-repeat: no-repeat;
+}
+
+.sm-icons#tw{
+  background-image: url(../photos/IG.svg);
+  background-repeat: no-repeat;
+}
+
+
+/* - - - - - - - - - - - - navigation   - - - - - - - - - - - - - - - */
+
+.navigation {
+  display: block;
+  width: 100%;
+  height: 6vh;
+}
+
+.nav {
+
+  border: none;
+  font-size: 0.7em;
+  color: black;
+  display: inline-flex;
+  justify-content:space-between;
+  padding-right: 3vw;
+  padding-left: 2vw;
+  width: 100px;
+  text-decoration: none;
+  /* height: 5vh; */
+}
