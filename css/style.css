@@ -15,30 +15,37 @@
 
 /* - - - - - - - - - - - - - - general styling  - - - - - - - - - - - - - - - */
 
-*, body, a {
+*, a {
   font-family: poppinsRegular;
   text-decoration: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .active {
-    background-color: #ffcb2f;
+    background-color: #ffb83d;
     padding: 5px;
     margin-right: 4%;
 }
 
 #p-container {
   margin-left: 15%;
-  margin-top: 10%;
-  max-width: 65%;
+  margin-right: 10%;
+  max-width: 90%;
+  max-height: 100vh;
 }
 
 p#landing-paragraph {
+  margin-top: 10%;
   font-size: 0.7em;
+  letter-spacing: 0.8;
 }
 
 #b-container {
-    /* border: 2px solid black; */
-    margin-top: 4vh;
+    margin-top: 5vh;
+    max-height: 100%;
 }
 
 #sign-up {
@@ -47,17 +54,17 @@ p#landing-paragraph {
   border: none;
   color: black;
   padding: 20px;
-  margin-bottom: 2vh;
+  margin-bottom: 4vh;
+  margin-left: 2vw;
   justify-content: center;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  /* display: inline-block; */
-  font-size: 14px;
+  font-size: 12px;
   font-family: poppinsBold;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
   height: 7vh;
-  width: 100%;
+  width: 30vw;
 }
 
 /* - - - - - - - - - - - - landing visual asset styling   - - - - - - - - - - - - - - - */
@@ -66,9 +73,11 @@ p#landing-paragraph {
   display: inline;
   position: absolute;
   width: 45%;
-  height: 100%;
+  height: 100vh;
   left:0;
-  background-color: #ffcb2f;
+  top:0;
+  bottom:0;
+  background-color: #fff;
   background-image: url("../photos/GIU4P.jpg");
   background-position: center;
 }
@@ -78,11 +87,16 @@ p#landing-paragraph {
   position: absolute;
   left: 47%;
   width: 52%;
+  top: 2vh;
+  height: 100vh;
+  /* border: 3px solid red; */
+  overflow-y: none;
+  z-index: 0;
 }
 
 #top-half {
   position: relative;
-  /* border: 2px solid black; */
+  /* border: 2px solid blue; */
   width: 100%;
   height: 40vh;
   margin-bottom: 5%;
@@ -93,26 +107,149 @@ p#landing-paragraph {
   /* border: 2px solid black; */
   width: 100%;
   height: 52vh;
-  margin-top: 4vh;
+  max-height: 43vh;
+  margin-top: 8.5vh;
+  overflow-y: scroll;
+  scroll-behavior:smooth;
+}
+
+
+/* - - - - - - - - - - - - scrollbar styling  - - - - - - - - - - - - - - - */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+::-webkit-scrollbar-corner {
+  background:#fff;
 }
 
 /* - - - - - - - - - - - - logo  - - - - - - - - - - - - - - - */
 
-#logo {
+
+#logo-big {
   display: inline-block;
   position: absolute;
   bottom:0;
   width: 35vw;
   height: 100%;
-  left:-5vw;
-  top: 2em;
+  left:-10vw;
+  top: 1.7em;
   background-image: url("../photos/LOGO.svg");
   background-repeat: no-repeat;
   background-position: left;
+  transform: scale(1.05);
+  z-index: 1;
 }
 
-/* - - - - - - - - - - - - countdown - - - - - - - - - - - - - - - */
+#launch-date {
+  background-image: url("../photos/LAUNCH-DATE.svg");
+  background-repeat: no-repeat;
+  height: 100%;
+  transform: scale(0.5);
 
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
+
+
+/* - - - - - - - - - - - - media queries  - - - - - - - - - - - - - - - */
+
+
+@media all and (max-width: 760px) {
+
+    #logo-small {
+      display: inline-block;
+      position: absolute;
+      width: 45%;
+      height: 25%;
+      left:3vw;
+      top: 1em;
+      background-image: url("../photos/LOGO.svg");
+      background-repeat: no-repeat;
+      background-position: left;
+      z-index: 1;
+      /* border: 2px solid red; */
+    }
+
+    #logo-big {
+      display: none;
+    }
+
+    #countdown {
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .landing-visual{
+    display: inline;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    background-image: url("../photos/GIU4P-S.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #container {
+      width: 100%;
+      left:0;
+      overflow-y: hidden;
+  }
+
+  #p-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0vh;
+    max-width: 95%;
+    overflow-y: hidden;
+  }
+
+  p#landing-paragraph {
+    margin-top: 1%;
+    font-size: 0.7em;
+    letter-spacing: 0.8;
+  }
+
+
+}
+
+/* @media all and (max-width: 600px) {
+	.container {
+		width: 100%;
+	} */
+
+
+/* - - - - - - - - - - - - countdown - - - - - - - - - - - - - - - */
+/*
 #countdown {
   display: inline-block;
   position: absolute;
@@ -122,16 +259,46 @@ p#landing-paragraph {
   height: 8vh;
   transform: scale(1.1);
 }
+ */
+
+ #count-wrapper {
+   width: 50%;
+   height: auto;
+   border: 1px solid black;
+ }
+
+  #countdown {
+    color: #000;
+    text-align: center;
+    position: absolute;
+    top: 40vh;
+    height:10%;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+    li {
+      display: inline-block;
+      font-size: 0.5em;
+      list-style-type: none;
+      padding: 1em;
+      text-transform: uppercase;
+    }
+
+    li span {
+      display: block;
+      font-size: 2.1rem;
+    }
 
 /* - - - - - - - - - - - - donate button  - - - - - - - - - - - - - - - */
 
-#btn-container {
+/* #btn-container {
     width: 100%;
     display: inline;
     position: absolute;
-    right:0;
-    /* border: 2px solid orange; */
-}
+} */
 
 .donate {
     position: -webkit-sticky;
@@ -139,17 +306,13 @@ p#landing-paragraph {
     background-color: #ffcb2f;
     border: none;
     color: black;
-    padding: 20px;
+    padding: 25px;
     justify-content:center;
     /* display: inline-block; */
     font-size: 14px;
     font-family: poppinsBold;
-    /* -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%; */
     height: 3vh;
     /* transform: scale(0.8); */
-    margin: 4px 2px;
 }
 
 #donate-btn{
@@ -158,7 +321,6 @@ p#landing-paragraph {
   top: 8vh;
   height: 6vh;
   width: 90px;
-  max-width: 200px;
 }
 
 /* - - - - - - - - - - - - social media  - - - - - - - - - - - - - - - */
@@ -203,10 +365,12 @@ p#landing-paragraph {
   display: block;
   width: 100%;
   height: 6vh;
+  margin-top: 9vh;
+  margin-left: 5vw;
 }
 
 .nav {
-
+  letter-spacing: 0.6px;
   border: none;
   font-size: 0.7em;
   color: black;
@@ -214,7 +378,20 @@ p#landing-paragraph {
   justify-content:space-between;
   padding-right: 3vw;
   padding-left: 2vw;
-  width: 100px;
+  width: auto;
   text-decoration: none;
   /* height: 5vh; */
+}
+
+
+.footer{
+  display: inline-block;
+  width: 100vw;
+  position: absolute;
+  left:0;
+  bottom:0;
+  background-color: white;
+  opacity: 0.5;
+  height: 7%;
+  z-index: 1;
 }
