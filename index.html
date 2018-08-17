@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'>
-    <!-- <script type="text/javascript" src="js/countdown.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script> -->
     <script src="dist/yscountdown.min.js"></script>
     <script  src="js/yscountdown.js"></script>
   </head>
@@ -21,9 +21,7 @@
 
       <!-- VISUAL ASSET (Video teaser OR Image)-->
       <div class="landing-visual"></div>
-
       <div id="logo-small"></div>
-
 
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~ MAIN CONTENT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~``-->
 
@@ -32,12 +30,12 @@
             <div class="ct" id="t3">
               <div class="ct" id="t4">
                 <div class="ct" id="t5">
-                  <ul id="menu">
+                  <!-- <ul id="menu">
                   <a href="#t1"><li class="icon fa fa-home" id="uno"></li></a>
-                  <a href="#t2"><li class="icon fa fa-list" id="dos"></li></a>
-                  <a href="#t3"><li class="icon fa fa-rocket" id="tres"></li></a>
-                  <a href="#t4"><li class="icon fa fa-dribbble" id="cuatro"></li></a>
-                  </ul>
+                  <a href="#t2"><li class="icon fa fa-question" id="dos"></li></a>
+                  <a href="#t3"><li class="icon fa fa-slideshare" id="tres"></li></a>
+                  <a href="#t4"><li class="icon fa fa-users" id="cuatro"></li></a>
+                  </ul> -->
                 <div class="page" id="p1">
           <!-- ~~~~~~~~~~~~~~~~~~~ LANDING PAGE / ABOUT ------------------------------------------------------------->
 
@@ -54,11 +52,15 @@
 
                <!-- TOP HALF CONTENT (Logo, Donate Button, Social Media, Nav Bar, Countdown)-->
                <div id="top-half">
+
                            <div id="logo-big"></div>
+
+
+
                   <!-- TODO: Change button class background image to an SVG -->
                  <div id="donate-btn">
 
-                     <button class="donate"> DONATE </button>
+                     <a href="https://peacegeeks.org/donate"><button class="donate"> DONATE </button></a>
 
                  </div>
 
@@ -69,7 +71,7 @@
                            <div class="sm-icons" id="tw">&nbsp;</div>
                    </div>
 
-                   <div id="countdown">
+                   <!-- <div id="countdown">
 
                        <li><span id="days">0</span>days</li>
                        <li><span id="hours">0</span>Hours</li>
@@ -99,7 +101,7 @@
                            secondsElement.textContent = remaining.seconds;
 
                          });
-                    </script>
+                    </script> -->
 
               </div>
 
@@ -114,17 +116,52 @@
 
                  <!-- BOTTOM HALF CONTENT (Content Copy and related assets)-->
                  <div id="bottom-half">
+
+
                    <div id="p-container">
 
-                     <p id="landing-paragraph">Our annual #GiveItUp4Peace campaign challenges you to give something up for the month of October. Pledge to support peace-tech projects like Meshkat Community to empower the next generation of digital peacebuilders in Jordan to combat hate and violence in online spaces.
+                     <div id="countdown">
+
+                                   <li><span id="days">0</span>days</li>
+                                   <li><span id="hours">0</span>Hours</li>
+                                   <li><span id="minutes">0</span>Minutes</li>
+                                   <li><span id="seconds">0</span>Seconds</li>
+
+                               </div>
+
+                          <script>
+
+                              var daysElement = document.querySelector("#days");
+                              var hoursElement = document.querySelector("#hours");
+                              var minutesElement = document.querySelector("#minutes");
+                              var secondsElement = document.querySelector("#seconds");
+                              var containerElement = document.querySelector("#countdown");
+                              var endDate = "2018/10/01"
+
+                              var myCountDown = new ysCountDown(endDate, function (remaining, finished) {
+
+                                if (finished) {
+                                  containerElement.textContent = "Expired";
+                                }
+
+                                daysElement.textContent = remaining.totalDays;
+                                hoursElement.textContent = remaining.hours;
+                                minutesElement.textContent = remaining.minutes;
+                                secondsElement.textContent = remaining.seconds;
+
+                              });
+                          </script>
+
+                     <p id="landing-paragraph">
+                       Our annual #GiveItUp4Peace campaign challenges you to give something up for the month of October. Pledge to support peace-tech projects like Meshkat Community to empower the next generation of digital peacebuilders in Jordan to combat hate and violence in online spaces.
                      </p>
 
                      <div id="b-container">
                          <center>
                            <!-- ~~~~~~~~~~~~ TYPEFORM BUTONS ~~~~~~~~~~~~~-->
-                                   <a class="typeform-share button" href="https://peacegeeks.typeform.com/to/FgTUBv" data-mode="popup" style="display:inline-flex;text-decoration:none;background-color:#FFCB2F;color:black;cursor:pointer;font-family:poppinsBold,Arial,sans-serif;font-size:14px;line-height:50px;text-align:center;margin-right:10px;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);margin-bottom:23px;" target="_blank">&nbsp; &nbsp;SIGN UP AS A TEAM &nbsp; &nbsp;</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+                                   <a class="typeform-share button" href="https://peacegeeks.typeform.com/to/FgTUBv" data-mode="popup" id="sign-up" target="_blank">&nbsp; &nbsp;SIGN UP AS A TEAM &nbsp; &nbsp;</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 
-                                   <a class="typeform-share button" href="https://peacegeeks.typeform.com/to/zYSUJY" data-mode="popup" style="display:inline-flex;text-decoration:none;background-color:#FFCB2F;color:black;cursor:pointer;font-family:poppinsBold,Arial,sans-serif;font-size:14px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);" target="_blank">&nbsp; &nbsp;SIGN UP ON MY OWN&nbsp; &nbsp;</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+                                   <a class="typeform-share button" href="https://peacegeeks.typeform.com/to/zYSUJY" data-mode="popup" id="sign-up"target="_blank">&nbsp; &nbsp;SIGN UP ON MY OWN&nbsp; &nbsp;</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 
                      <!-- <button id="sign-up">SIGN UP AS A TEAM </button>
                      <button id="sign-up">SIGN UP ON MY OWN</button> -->
@@ -137,21 +174,24 @@
         </div>
         <div class="page" id="p2">
           <!-- ~~~~~~~~~~~~~~~~~~~ HOW IT WORKS ------------------------------------------------------------->
-          <section class="icon fa fa-list"><span class="title">How It Works</span></section>
+          <section class="icon"><span class="title">How It Works</span></section>
         </div>
           <!-- ~~~~~~~~~~~~~~~~~~~ COMPANY TEAMS ------------------------------------------------------------->
         <div class="page" id="p3">
-          <section class="icon fa fa-rocket"><span class="title">Company Teams</span></section>
+          <section class="icon" ><span class="title">Company Teams</span></section>
         </div>
         <div class="page" id="p4">
           <!-- ~~~~~~~~~~~~~~~~~~~ PARTICIPANTS ------------------------------------------------------------->
-          <section class="icon fa fa-dribbble">
-            <span class="title">Participants</span>
-            <p class="hint">
-              <a href="https://dribbble.com/albertohartzet" target="_blank">Im ready to play, <span class="hint line-trough">invite me </span> find me</a>
-            </p>
+          <section class="icon">
+
 
           </section>
+
+          <div id="ig-widget-container">
+            <!-- InstaWidget -->
+        <a href="https://instawidget.net/v/tag/giveitup4peace" id="link-0f47882e9dba20641d239f2310fbb270776cd16304d35c13192814f26e9b056f">#giveitup4peace</a>
+        <script src="https://instawidget.net/js/instawidget.js?u=0f47882e9dba20641d239f2310fbb270776cd16304d35c13192814f26e9b056f&width=900px"></script>
+
         </div>
 
           </div>

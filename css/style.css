@@ -24,32 +24,36 @@ body {
   overflow-x: hidden;
 }
 
-.active {
+/* .active {
     background-color: #ffb83d;
     padding: 5px;
     margin-right: 4%;
-}
+} */
 
 #p-container {
   margin-left: 15%;
   margin-right: 10%;
   max-width: 90%;
   max-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
 }
 
 #landing-paragraph {
-  margin-top: 10%;
-  font-size: 0.75em;
+  margin-top: 5%;
+  font-size: 0.9em;
   letter-spacing: 0.8;
+  margin-left: 5px;
+    overflow-y: hidden;
 }
 
 #b-container {
     margin-top: 5vh;
-    max-height: 100%;
 }
 
 #sign-up {
-  display: flex;
+  display: inline-block;
   background-color: #ffcb2f;
   border: none;
   color: black;
@@ -63,8 +67,6 @@ body {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
-  height: 7vh;
-  width: 30vw;
 }
 
 /* - - - - - - - - - - - - landing visual asset styling   - - - - - - - - - - - - - - - */
@@ -80,6 +82,7 @@ body {
   background-color: #fff;
   background-image: url("../photos/GIU4P.jpg");
   background-position: center;
+  background-repeat: none;
 }
 
 #container {
@@ -96,20 +99,22 @@ body {
 
 #top-half {
   position: relative;
-  /* border: 2px solid blue; */
   width: 100%;
   height: 40vh;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
+  margin-top: 4.5vh;
 }
 
 #bottom-half {
   position: relative;
   /* border: 2px solid black; */
   width: 100%;
-  height: 52vh;
-  max-height: 43vh;
-  margin-top: 8.5vh;
+  height: 80vh;
+  top:-4vh;
+  max-height: 52vh;
+  /* margin-top: 8.5vh; */
   overflow-y: scroll;
+  overflow-y: hidden;
   scroll-behavior:smooth;
 }
 
@@ -149,13 +154,14 @@ body {
   bottom:0;
   width: 35vw;
   height: 100%;
-  left:-10vw;
-  top: 1.7em;
+  left:-5vw;
+  top: 1em;
   background-image: url("../photos/LOGO.svg");
   background-repeat: no-repeat;
   background-position: left;
   transform: scale(1.05);
   z-index: 3;
+  /* border: 1px solid red; */
 }
 
 #launch-date {
@@ -177,6 +183,13 @@ body {
 
 /* - - - - - - - - - - - - media queries  - - - - - - - - - - - - - - - */
 
+@media all and (max-width: 880px) {
+    #sign-up {
+
+      height: 10px;
+    }
+}
+
 
 @media all and (max-width: 760px) {
 
@@ -190,23 +203,12 @@ body {
       background-image: url("../photos/LOGO.svg");
       background-repeat: no-repeat;
       background-position: left;
-      z-index: 3;
+      z-index: 4;
       /* border: 2px solid red; */
     }
 
     #logo-big {
       display: none;
-    }
-
-
-    #countdown {
-      width: 100%;
-      text-align: center;
-      position: absolute;
-      right: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
     .landing-visual{
@@ -229,7 +231,6 @@ body {
   #p-container {
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 0vh;
     max-width: 95%;
     overflow-y: hidden;
   }
@@ -250,35 +251,31 @@ body {
 
 
 /* - - - - - - - - - - - - countdown - - - - - - - - - - - - - - - */
-/*
+
 #countdown {
-  display: inline-block;
-  position: absolute;
-  bottom: 0vh;
-  right: 2vw;
-  max-width: 280px;
-  height: 8vh;
   transform: scale(1.1);
+  /* border: 2px solid red; */
+  margin-left: 3%;
 }
- */
+
 
  #count-wrapper {
    width: 50%;
    height: auto;
-   border: 1px solid black;
+   /* border: 1px solid black; */
  }
 
-  #countdown {
+  /* #countdown {
     color: #000;
     text-align: center;
     position: absolute;
-    top: 40vh;
+    top: 42vh;
     height:10%;
-    right: 15px;
+    right: 20.1vw;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+  } */
 
     li {
       display: inline-block;
@@ -399,6 +396,7 @@ body {
 
 /*------------------------------------------------------------------*/
 
+
 html, body, .page {
   width: 100vw;
   height: 100vh;
@@ -423,9 +421,9 @@ html, body, .page {
   left: 200%;
 }
 
-#p2 { background: salmon; }
+#p2 { background: gold; }
 #p3 { background: gold; }
-#p4 { background: deeppink; }
+#p4 { background: white; }
 
 #t2:target #p2,
 #t3:target #p3,
@@ -487,19 +485,33 @@ ul .icon:hover {
   -o-transform: scale(1.2) !important;
 }
 
-ul {
+/* ul {
   position: fixed;
   z-index: 1;
   top:30vh;
   bottom: 0;
-  left: 0;
   margin: auto;
   height: auto;
   width: 6%;
   padding: 10px;
   text-align: center;
+ } */
 
+#uno {
+   /* background-image: url(../photos/.svg); */
  }
+
+#dos {
+    background-image: url(../photos/.svg);
+  }
+
+#tres {
+   background-image: url(../photos/.svg);
+ }
+
+#cuatro {
+  background-image: url(../photos/.svg);
+}
 
 #menu .icon {
   margin: 10px 0;
@@ -582,4 +594,16 @@ ul {
   -moz-transform: translateX(0) !important;
   -o-transform: translateX(0) !important;
   /* transition-delay: 0.5s; */
+}
+
+
+/* ------------------------------------IG WIDGET --------------------------------------*/
+#ig-widget-container{
+  position: absolute;
+  width: 70vw;
+  height: 65%;
+  overflow:scroll;
+  margin-left: 10%;
+  margin-right: 5%;
+  margin-top: 30vh;
 }
