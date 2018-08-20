@@ -88,22 +88,49 @@
   height: 50px;
 }
 
+#how-icon-1 {
+  background-image: url(../photos/icon1.svg);
+  width: 200px;
+  height: 150px;
+  background-repeat: none;
+}
+
 #how-2 {
   background-image: url(../photos/2.SVG);
   width: 50px;
   height: 50px;
 }
 
+#how-icon-2 {
+  background-image: url(../photos/icon2.svg);
+  width: 200px;
+  height: 150px;
+  background-repeat: none;
+}
+
 #how-3 {
   background-image: url(../photos/3.SVG);
+  background-repeat: no-repeat;
   width: 50px;
-  height: 50px;
+  height: 100px;
+}
+
+#how-icon-3 {
+  background-image: url(../photos/icon3.svg);
+  background-repeat: none;
 }
 
 #how-4 {
   background-image: url(../photos/4.SVG);
   width: 50px;
   height: 50px;
+}
+
+#how-icon-4 {
+  background-image: url(../photos/icon4.svg);
+  width: 200px;
+  height: 150px;
+  background-repeat: none;
 }
 
 
@@ -342,7 +369,6 @@ p#launch-party {
     content: "";
     display: table;
     clear: both;
-    border: 2px solid red;
 }
 
 /* - - - - - - - - - - - - logo  - - - - - - - - - - - - - - - */
