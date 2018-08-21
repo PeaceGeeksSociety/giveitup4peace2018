@@ -1,5 +1,5 @@
 
- #section1 {margin-top: 110vh;width: 100%;height:500px;color: #fff; background-color: white; padding: 10%;}
+ #howitworks {margin-top: 110vh;width: 100%;height:500px;color: #fff; background-color: white; padding: 10%;}
  #section2 {padding-top:50px;height:500px;color: #fff; background-color: orange;}
  #section3 {padding-top:50px;height:500px;color: #fff; background-color: blue;}
  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
@@ -82,6 +82,11 @@
 
 /* - - - - register icons - - - - - - -  - - */
 
+#howitworks {
+  color: black;
+
+}
+
 #how-1 {
   background-image: url(../photos/1.SVG);
   width: 50px;
@@ -90,9 +95,11 @@
 
 #how-icon-1 {
   background-image: url(../photos/icon1.svg);
-  width: 200px;
-  height: 150px;
-  background-repeat: none;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 50px;
+  background-position: right;
+  transform: scale(1.6);
 }
 
 #how-2 {
@@ -103,21 +110,26 @@
 
 #how-icon-2 {
   background-image: url(../photos/icon2.svg);
-  width: 200px;
-  height: 150px;
-  background-repeat: none;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 50px;
+  background-position: right;
+  transform: scale(1.8);
 }
 
 #how-3 {
   background-image: url(../photos/3.SVG);
-  background-repeat: no-repeat;
   width: 50px;
-  height: 100px;
+  height: 50px;
 }
 
 #how-icon-3 {
   background-image: url(../photos/icon3.svg);
-  background-repeat: none;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 50px;
+  background-position: right;
+  transform: scale(1.8);
 }
 
 #how-4 {
@@ -128,10 +140,14 @@
 
 #how-icon-4 {
   background-image: url(../photos/icon4.svg);
-  width: 200px;
-  height: 150px;
-  background-repeat: none;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 50px;
+  background-position: right;
+  transform: scale(1.1);
 }
+
+/* - - - - - - - - - - -  navbar - - - - - - - - - -  /*
 
 
 /* Navbar links */
@@ -228,9 +244,6 @@ body {
   overflow-x: hidden;
 }
 
-#section1 {
-  color: black;
-}
 
 #donate-link {
   background-color: #F09416;
@@ -317,7 +330,7 @@ p#launch-party {
 #container {
   display: inline-block;
   position: absolute;
-  left: 47%;
+  left: 43%;
   width: 52%;
   top: 2vh;
   height: 100vh;
@@ -340,7 +353,7 @@ p#launch-party {
   height: 110vh;
   top:-12vh;
   /* margin-top: 8.5vh; */
-  overflow-y: scroll;
+  overflow-y: hidden;
   scroll-behavior:smooth;
 
 }
@@ -444,6 +457,19 @@ p#launch-party {
 
 @media all and (max-width: 760px) {
 
+    .column {
+      width: 50%;
+      height: 50%;
+      margin-bottom: 10%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
 
     #navbar {
       display: none;
@@ -510,8 +536,10 @@ p#launch-party {
   #bottom-half {
     /* border: 2px solid red; */
     top: -12vh;
-    overflow-y: scroll;
+    overflow-y: hidden;
   }
+
+
 
 
   /* .countdown-container {
