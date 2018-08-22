@@ -9,50 +9,57 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script> -->
-    <script src="dist/yscountdown.min.js"></script>
+    <script src="./ScrollMagic.min.js"></script>
+    <script src="./debug.addIndicators.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <script src="./js/yscountdown.min.js"></script>
     <script  src="js/yscountdown.js"></script>
   </head>
 
   <body>
 
+    <header id="#top">
 
-      <header>
-        <div id="navbar">
-        <a href="index.html"> HOME </a>
-          <a href="#section2">ABOUT</a>
-            <a href="#howitworks"> HOW IT WORKS</a>
-              <a href="#section3">CORPORATE TEAMS </a>
-                <a href="#section4"> PARTICIPANT INFO </a>
-                  <a href="https://peacegeeks.org/donate" id="donate-link"> DONATE </a>
+            <!-- <div id="nav-container"> -->
+                <div id="nav-toggle">
+                  <div id="high1">HOW IT WORKS</div>
+                  <div id="high2">ABOUT </div>
+                  <div id="high3">CORPORATE</div>
+                  <div id="high4">PARTICIPANTS</div>
+                </div>
+              <!-- </div> -->
+
+      <div id="navbar">
+
+        <a href="#top" id="sign-up-link"> SIGN UP </a>
+            <!-- <a href="#howitworks"> HOW IT WORKS</a>
+                      <a href="#about">ABOUT</a>
+                          <a href="#corporate">CORPORATE TEAMS </a>
+                              <a href="#participant"> PARTICIPANT INFO </a> -->
+                                  <a href="https://peacegeeks.org/donate" id="donate-link"> DONATE </a>
+
               </div>
-
-            <script>
-                      // When the user scrolls the page, execute myFunction
-                window.onscroll = function() {myFunction()};
-
-                // Get the navbar
-                var navbar = document.getElementById("navbar");
-
-                // Get the offset position of the navbar
-                var sticky = navbar.offsetTop;
-
-                // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-                function myFunction() {
-                  if (window.pageYOffset >= sticky) {
-                    navbar.classList.add("sticky")
-                  } else {
-                    navbar.classList.remove("sticky");
-                  }
-                }
-            </script>
 
       </header>
 
       <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ VISUAL ASSET (Video/Image) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-      <div class="landing-visual"></div>
+      <!-- DESKTOP -->
+      <div id="landing-vid-container">
+      <div class="landing-video">
+        <video id="myVideo" poster="./photos/teaser-thmbnail-large.jpg" controls preload="none">
+        <source src="./videos/teaser.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+
+      <!-- MOBILE ----->
+      <div id="landing-visual">
+        <video id="myVideo" poster="./photos/teaser-thbmnail-mobile.png" controls preload="none">
+        <source src="./videos/teaser.mp4" type="video/mp4">
+        </video>
+      </div>
 
 
       <div id="logo-small"></div>
@@ -88,10 +95,15 @@
                 <div id="how-4">  <div id="how-icon-4"></div> </div>
                 <h2>Give It Up</h2>
                 <p id="how"> From October 1-31, complete your Give It Up challenge every day. Share your journey using <a href="#participants">#GiveItUp4Peace</a></p>
-
+                <br><br>
               </div>
             </div>
+          </div>
 
+
+
+    <div id="about" class="container-fluid">
+        <h4>a bout about </h4>
       <!-- <div id="abt-paragraph"><p><a href="www.peacegeeks.org"> PeaceGeeks </a> is a Vancouver-based nonprofit that works with communities to develop the digital tools they need to strengthen peacebuilding and humanitarian response at home and abroad — and we want YOU to join us in making a difference!
 
       #GiveItUp4Peace is our annual challenge from Oct. 1-31. In solidarity with communities that have given up everything in pursuit of peace, we ask you to give up one thing you “can’t live without” for all of October, and raise vital funds to support these communities in the process.
@@ -111,18 +123,10 @@
       Register today [hyperlink] or contact us for more info at fundraising@peacegeeks.org !</p>
     </div> -->
     </div>
-
-
-    <div id="section2" class="container-fluid">
-      <h1>Section 2</h1>
-      HOW IT WORKS
+    <div id="corporate" class="container-fluid">
+      CORPORATE
     </div>
-    <div id="section3" class="container-fluid">
-      <h1>Section 3</h1>
-      CORPORATE TEAMS
-    </div>
-    <div id="section41" class="container-fluid">
-      <h1>Section 4  1</h1>
+    <div id="participant" class="container-fluid">
       PARTICIPANTS
     </div>
 
@@ -157,11 +161,10 @@
 
           <!-- ~~~~~~~~~~~~~~~~~~~~~~~ MAIN CONTENT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~``-->
 
-
-
           <!-- ~~~~~~~~~~~~~~~~~~~ LANDING PAGE / ABOUT ------------------------------------------------------------->
 
           <div id="container">
+
 
                <!-- TOP HALF CONTENT (Logo, Donate Button, Social Media, Nav Bar, Countdown)-->
                <div id="top-half">
@@ -177,7 +180,7 @@
                                         <li><span id="seconds">0</span>Seconds</li>
 
                                     </div>
-                                    <p id="launch-party"> &nbsp;until our Launch Party! <a href="">  </a></p>
+                                    <p id="launch-party"> &nbsp;until our <a href="https://www.eventbrite.ca/e/giveitup4peace-launch-party-tickets-49154551587?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing" id="launch-party-btn">Launch Party!</a></p>
 
                                <script>
 
@@ -253,6 +256,55 @@
          <section id="#about"> </section>
 
     <script  src="js/index.js"></script>
+
+              <script>
+                        // When the user scrolls the page, execute myFunction
+                  window.onscroll = function() {myFunction()};
+
+                  // Get the navbar
+                  var navbar = document.getElementById("navbar");
+                  var navToggle = document.getElementById("nav-toggle");
+
+                  // Get the offset position of the navbar
+                  var sticky = navbar.offsetTop;
+                  var sticky = navToggle.offsetTop;
+
+                  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+                  function myFunction() {
+                    if (window.pageYOffset >= sticky) {
+                      navbar.classList.add("sticky")
+                      navToggle.classList.add("sticky")
+                    } else {
+                      navbar.classList.remove("sticky");
+                      navToggle.classList.remove("sticky");
+                    }
+                  }
+              </script>
+
+
+                  <script>
+                    // init controller
+                    var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 500}});
+
+                    // build scenes
+                    new ScrollMagic.Scene({triggerElement: "#howitworks"})
+                            .setClassToggle("#high1", "active")
+                            // .addIndicators()
+                            .addTo(controller);
+                    new ScrollMagic.Scene({triggerElement: "#about"})
+                            .setClassToggle("#high2", "active")
+                            // .addIndicators()
+                            .addTo(controller);
+                    new ScrollMagic.Scene({triggerElement: "#corporate"})
+                            .setClassToggle("#high3", "active")
+                            // .addIndicators()
+                            .addTo(controller);
+                    new ScrollMagic.Scene({triggerElement: "#participant"})
+                            .setClassToggle("#high4", "active")
+                            // .addIndicators()
+                            .addTo(controller);
+                  </script>
+
 
       <!-- <div class="footer"> </div> -->
 
