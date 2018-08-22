@@ -24,20 +24,24 @@
 }
 
 
-#howitworks {margin-top: 50vh;width:100%;height: 500px;color: #fff;padding: 12px}
-#about {padding-top:30px;height:500px;color: #fff; background-color: #fff}
-#corporate {padding-top:50px;height:500px;color: #fff; background-color: #fff;}
-#participant {padding-top:50px;height:500px;color: #fff; background-color: #fff;}
+#howitworks {margin-top: 100vh;width:100%;height:550px;color: #fff;padding: 12px}
+#about {padding-top:10px;height:610px;color: #fff; background-color: #F3AE59}
+#corporate {padding-top:10px;height:610px;color: #fff; background-color: #F7C990;}
+#participant {padding-top:10px;height:610px;color: #fff; background-color: #FADEBC;}
 
 
 #landing-visual {
   display: none;
 }
 
-
 #myVideo {
-  width:100%;
+  width: 100%;
   height:auto;
+  background-color:#F3AE59;
+}
+
+.controls {
+  color: white;
 }
 
 
@@ -61,30 +65,32 @@
   justify-content: space-between;
   width: 500px;
   z-index: 3;
+  left: 7vw;
+
 }
 
 #high1{
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-family: poppinsBold;
-  padding: 10px;
+  padding: 15px;
 }
 
 #high2{
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-family: poppinsBold;
-  padding: 10px;
+  padding: 15px;
 }
 
 #high3{
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-family: poppinsBold;
-  padding: 10px;
+  padding: 15px;
 }
 
 #high4{
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-family: poppinsBold;
-  padding: 10px;
+  padding: 15px;
 }
 
 @media screen and (min-height: 100%) {
@@ -123,6 +129,7 @@
     color: #818181;
     display: block;
     transition: 0.3s;
+    font-family: poppinsBold;
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -146,11 +153,11 @@
   }
 }
 
-
 #navbar {
   overflow: hidden;
   background-color: none;
   z-index: 5;
+  width: 100%;
   margin-bottom: 2vh;
   font-size: 0.8em;
   margin-left: 80%;
@@ -293,9 +300,9 @@ p#how{
 }
 
 h4 {
-  font-size: 1.1em;
+  font-size: 1em;
   max-width: 500px;
-  line-height: 1.4;
+  line-height: 1.8;
 }
 
 body {
@@ -348,9 +355,8 @@ p#launch-party {
   font-size: 0.8em;
   letter-spacing: 0.02em;
   float:right;
-
 }
-
+/*
 #launch-party-btn {
   border: none;
   padding: 10px;
@@ -358,7 +364,7 @@ p#launch-party {
   color: black;
   opacity: 0.8;
   border-radius: 15px;
-}
+} */
 
 #sign-up {
   display: inline-block;
@@ -381,9 +387,9 @@ p#launch-party {
 
 #landing-vid-container {
   width: 45%;
-  left: 2%;
+  left: 5vw;
   /* border: 5px solid red; */
-  top:30vh;
+  top:10vh;
   position: relative;
 }
 
@@ -447,15 +453,15 @@ p#launch-party {
   display: inline-block;
   position: absolute;
   bottom:0;
-  width: 26vw;
+  width: 25vw;
   height: 100%;
-  left:2.5vw;
+  left:-4vw;
   top: 0.3em;
   background-image: url("../photos/LOGO.svg");
   background-repeat: no-repeat;
   background-position: left;
   transform: scale(1.05);
-  z-index: 1;
+  z-index: 3;
   /* border: 1px solid red; */
 }
 
@@ -488,7 +494,7 @@ p#launch-party {
     #th-container {
       /* border: 1px solid black; */
       position: absolute;
-      right:0;
+      right:2px;
       margin-top: 20%;
       transform: scale(1.1);
 
@@ -556,7 +562,6 @@ p#launch-party {
 
       #landing-vid-container {
         top: 30vh;
-
       }
 
      #howitworks {margin-top: 90vh;width:100%;height: 500px; padding: 12px;}
@@ -568,15 +573,16 @@ p#launch-party {
 
 
      #howitworks {margin-top: 165vh;width:100%;height: 500px; padding: 12px;}
-     #about {padding-top:120px;height:500px;color: #fff; background-color: #ACDEE2}
-     #corporate {padding-top:50px;height:500px;color: #fff; background-color: #fff;}
-     #participant {padding-top:50px;height:500px;color: #fff; background-color: #fff;}
+     #about {padding-top:120px;height:500px;color: #fff; background-color: #F3AE59}
+     #corporate {padding-top:50px;height:500px;color: #fff; background-color: #F7C990;}
+     #participant {padding-top:50px;height:500px;color: #fff; background-color: #FADEBC;}
 
 
     h4 {
       font-size: 1em;
-      max-width: 410px;
+      max-width: 350px;
       line-height: 1.4;
+      margin-left: 4.3%;
     }
 
     #nav-toggle {
@@ -593,13 +599,19 @@ p#launch-party {
 
     }
 
+    p#launch-party {
+      font-size: 0.8em;
+      letter-spacing: 0.02em;
+      float:left;
+    }
+
     #logo-small {
       display: inline-block;
       position: absolute;
-      width: 45%;
-      height: 25%;
-      left:3vw;
-      top: 1.2em;
+      width: 30%;
+      height: 20%;
+      left:6vw;
+      top: 0;
       background-image: url("../photos/LOGO.svg");
       background-repeat: no-repeat;
       background-position: left;
@@ -620,6 +632,7 @@ p#launch-party {
         width: 100%;
         height:auto;
         margin-bottom: 10%;
+        background-color:#F3AE59;
 }
 
     #landing-visual{
@@ -645,6 +658,14 @@ p#launch-party {
       height: 105vh;
       left:2px;
       overflow-y: hidden;
+  }
+
+  #th-container {
+    /* border: 1px solid black; */
+    position: absolute;
+    left: -6vw;
+    top:-3vh;
+    transform: scale(0.7);
 
   }
 
@@ -656,17 +677,15 @@ p#launch-party {
   }
 
   #landing-paragraph {
-    margin-top:0%;
+    transform: scale(0.9);
     max-width: 280px;;
-    font-size: 0.85em;
     letter-spacing: 0.8;
-    margin-left: 5px;
     overflow-y: hidden;
     font-family: openSans-Regular;
   }
 
   #bottom-half {
-    top: -18vh;
+    top: -28vh;
     /* border: 2px solid black; */
   }
 
@@ -680,14 +699,13 @@ p#launch-party {
 
   }
 
-
   .hamburger-container {
     z-index: 2;
     float:right;
     position: absolute;
     top:2vh;
-    right:0;
     padding: 10px;
+    right: 2px;
   }
 
   #open {

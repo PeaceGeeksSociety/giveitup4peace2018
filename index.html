@@ -18,16 +18,18 @@
 
   <body>
 
-    <header id="#top">
 
-            <!-- <div id="nav-container"> -->
-                <div id="nav-toggle">
-                  <div id="high1">HOW IT WORKS</div>
-                  <div id="high2">ABOUT </div>
-                  <div id="high3">CORPORATE</div>
-                  <div id="high4">PARTICIPANTS</div>
-                </div>
-              <!-- </div> -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TOP  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` `-->
+    <header id="#top">
+                 <!-- ~~~~~~~~~~~~~~~~ NAV TOGGLE  ~~~~~~~` `-->
+
+        <div id="nav-toggle">
+          <div id="high1">HOW IT WORKS</div>
+          <div id="high2"> WHY PARTICIPATE  </div>
+          <div id="high3">CORPORATE  TEAMS</div>
+          <div id="high4">PLEDGERS</div>
+        </div>
+
 
       <div id="navbar">
 
@@ -42,12 +44,12 @@
 
       </header>
 
-      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ VISUAL ASSET (Video/Image) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ LANDING TEASER VIDEO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
       <!-- DESKTOP -->
       <div id="landing-vid-container">
       <div class="landing-video">
-        <video id="myVideo" poster="./photos/teaser-thmbnail-large.jpg" controls preload="none">
+        <video id="myVideo" poster="./photos/pg-youth-day1.png" controls preload="none" >
         <source src="./videos/teaser.mp4" type="video/mp4">
         </video>
       </div>
@@ -56,7 +58,7 @@
 
       <!-- MOBILE ----->
       <div id="landing-visual">
-        <video id="myVideo" poster="./photos/teaser-thbmnail-mobile.png" controls preload="none">
+        <video id="myVideo" poster="./photos/pg-youth.png" controls preload="none">
         <source src="./videos/teaser.mp4" type="video/mp4">
         </video>
       </div>
@@ -103,7 +105,7 @@
 
 
     <div id="about" class="container-fluid">
-        <h4>a bout about </h4>
+        <h4> ABOUT </h4>
       <!-- <div id="abt-paragraph"><p><a href="www.peacegeeks.org"> PeaceGeeks </a> is a Vancouver-based nonprofit that works with communities to develop the digital tools they need to strengthen peacebuilding and humanitarian response at home and abroad — and we want YOU to join us in making a difference!
 
       #GiveItUp4Peace is our annual challenge from Oct. 1-31. In solidarity with communities that have given up everything in pursuit of peace, we ask you to give up one thing you “can’t live without” for all of October, and raise vital funds to support these communities in the process.
@@ -124,14 +126,13 @@
     </div> -->
     </div>
     <div id="corporate" class="container-fluid">
-      CORPORATE
+      <h4>CORPORATE</h4>
     </div>
     <div id="participant" class="container-fluid">
-      PARTICIPANTS
+      <h4>PARTICIPANTS</h4>
     </div>
 
-
-      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVIGATION  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` `-->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HAMBURGER NAVIGATION  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` `-->
 
 
           <div class="hamburger-container">
@@ -170,16 +171,13 @@
                <div id="top-half">
                        <div id="logo-big"></div>
                           <div id="th-container">
-
-
-                          <div id="countdown">
-
+                            <div id="countdown">
                                         <li><span id="days">0</span>days</li>
                                         <li><span id="hours">0</span>Hours</li>
                                         <li><span id="minutes">0</span>Minutes</li>
                                         <li><span id="seconds">0</span>Seconds</li>
-
                                     </div>
+
                                     <p id="launch-party"> &nbsp;until our <a href="https://www.eventbrite.ca/e/giveitup4peace-launch-party-tickets-49154551587?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing" id="launch-party-btn">Launch Party!</a></p>
 
                                <script>
@@ -231,7 +229,7 @@
 
                        Join us in helping make a difference for communities facing displacement, conflict and crisis worldwide. <br>
 
-                       <h4>This October, #GiveItUp4Peace:
+                       <h4>This October, #GiveItUp4Peace!<br>
                        Give up something for the month and raise money to help communities at risk use tech for peace. <br></h4>
 
                      </p>
@@ -253,7 +251,7 @@
            </div>
          </div>
 
-         <section id="#about"> </section>
+         <!-- <section id="#about"> </section> -->
 
     <script  src="js/index.js"></script>
 
@@ -268,15 +266,16 @@
                   // Get the offset position of the navbar
                   var sticky = navbar.offsetTop;
                   var sticky = navToggle.offsetTop;
-
                   // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
                   function myFunction() {
                     if (window.pageYOffset >= sticky) {
                       navbar.classList.add("sticky")
                       navToggle.classList.add("sticky")
+
                     } else {
                       navbar.classList.remove("sticky");
                       navToggle.classList.remove("sticky");
+
                     }
                   }
               </script>
