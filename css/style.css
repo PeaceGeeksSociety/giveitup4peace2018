@@ -32,9 +32,33 @@ h1 {
 }
 
 h1#abt-header {
-  color: #278186;
+  color: white;
   left: 2%;
   position: absolute;
+}
+
+h1#pledge-header {
+  color: white;
+  left:2%;
+  position: absolute;
+}
+
+h1#corporate-header {
+  color: white;
+  left: 2%;
+
+  position: absolute;
+}
+
+p#corp-para {
+  padding: 50px 0;
+  background-color: none;
+  color: black;
+  display: inline;
+  font-size: 0.8em;
+  font-family: 12px;
+  letter-spacing: 0.05em;
+  line-height: 2;
 }
 
 .container-fluid {
@@ -62,16 +86,6 @@ h1#abt-header {
   z-index: -1;
 }
 
-/* #corporate {
-  padding: 50px 0;
-  background-color: none;
-  color: black;
-  display: inline;
-  font-size: 0.8em;
-  font-family: 12px;
-  letter-spacing: 0.05em;
-  line-height: 2;
-} */
 
 #landing-visual {
   display: none;
@@ -101,7 +115,7 @@ h1#abt-header {
   width: 550px;
   z-index: 1;
   left: 7vw;
-  /* padding: 15px; */
+  padding-right: 10px;
 }
 
 #pg-logo {
@@ -532,11 +546,74 @@ p#launch-party {
 }
 
 
+/*- - - - - - - - - - - - - - - - -  about section styling - - - - - - - - - - - - - - - - - - - - - */
+
+.section-container {
+  width: 95%;
+  max-height: 70%;
+  padding: 2%;
+  margin-top: 15%;
+  position: absolute;
+  /* border: 5px solid red; */
+}
+
+
+.section-content {
+  max-width: 300px;
+  display: inline-block;
+  position: absolute;
+  /* overflow-y: scroll; */
+  /* border: 5px solid black; */
+}
+
+#abt-giu4p {
+  display: inline;
+  border: none;
+  background-color: white;
+  padding:12px;
+  margin-right: 2%;
+  font-family: poppinsBold;
+}
+
+#abt-pgeeks {
+  display: inline;
+  border: none;
+  background-color: white;
+  padding: 12px;
+  font-family: poppinsBold;
+}
+
+#giu4pDIV {
+    padding: 50px 0;
+    background-color: none;
+    color: black;
+    display: inline;
+    font-size: 0.8em;
+    font-family: 12px;
+    letter-spacing: 0.05em;
+    line-height: 2;
+}
+
+#pgDIV {
+    padding: 50px 0;
+    display: none;
+}
+
+.corp-section-container {
+  width: 95%;
+  max-height: 70%;
+  padding: 2%;
+  margin-top: 20%;
+  position: absolute;
+  /* border: 5px solid red; */
+}
+
+
 /* - - - - - - -  - - - - - - - - - - - - - - -- - - - - media queries  - - - - - - - - - - - - - - -  - - - - - - - - - */
 
 
-
 @media all and (min-width: 760px) {
+
     .hamburger-container {
       display: none;
     }
@@ -551,7 +628,8 @@ p#launch-party {
       transform: scale(1.1);
 
     }
-}
+
+  }
 
 
 @media all and (max-width: 1100px) {
@@ -582,8 +660,6 @@ p#launch-party {
   #th-container {
     transform: scale(0.8);
   }
-
-
 }
 
         @media all and (max-width: 1000px) {
@@ -618,6 +694,19 @@ p#launch-party {
         }
 
             @media all and (max-width: 760px) {
+
+            .section-container{
+              margin-top: 27%;
+            }
+
+            .corp-section-container {
+              width: 95%;
+              max-height: 70%;
+              padding: 2%;
+              margin-top: 50%;
+              position: absolute;
+              /* border: 5px solid red; */
+            }
 
               p#how{
                 font-size: 0.6em;
@@ -782,57 +871,6 @@ p#launch-party {
                   }
 
 
-/*- - - - - - - - - - - - - - - - -  about section styling - - - - - - - - - - - - - - - - - - - - - */
-
-.section-container {
-  width: 95%;
-  max-height: 70%;
-  padding: 2%;
-  margin-top: 15%;
-  position: absolute;
-  /* border: 5px solid red; */
-}
-
-.section-content {
-  max-width: 300px;
-  display: inline-inline-block;
-  position: absolute;
-  /* overflow-y: scroll; */
-  /* border: 5px solid black; */
-}
-
-#abt-giu4p {
-  display: inline;
-  border: none;
-  background-color: white;
-  padding:12px;
-  margin-right: 2%;
-  font-family: poppinsBold;
-}
-
-#abt-pgeeks {
-  display: inline;
-  border: none;
-  background-color: white;
-  padding: 12px;
-  font-family: poppinsBold;
-}
-
-#giu4pDIV {
-    padding: 50px 0;
-    background-color: none;
-    color: black;
-    display: inline;
-    font-size: 0.8em;
-    font-family: 12px;
-    letter-spacing: 0.05em;
-    line-height: 2;
-}
-
-#pgDIV {
-    padding: 50px 0;
-    display: none;
-}
 
 /* - - - - - - - - - - - - countdown - - - - - - - - - - - - - - - */
 
