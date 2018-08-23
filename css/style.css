@@ -595,8 +595,14 @@ p#launch-party {
 }
 
 #pgDIV {
-    padding: 50px 0;
-    display: none;
+  padding: 50px 0;
+  background-color: none;
+  color: black;
+  display: inline;
+  font-size: 0.8em;
+  font-family: 12px;
+  letter-spacing: 0.05em;
+  line-height: 2;
 }
 
 .corp-section-container {
