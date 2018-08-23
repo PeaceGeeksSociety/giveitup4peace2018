@@ -161,6 +161,7 @@ p#corp-para {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 5;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.9);
     overflow-y: hidden;
@@ -595,21 +596,21 @@ p#launch-party {
 }
 
 #pgDIV {
-  padding: 50px 0;
-  background-color: none;
-  color: black;
-  display: inline;
-  font-size: 0.8em;
-  font-family: 12px;
-  letter-spacing: 0.05em;
-  line-height: 2;
+    padding: 50px 0;
+    display: none;
+    background-color: none;
+    color: black;
+    font-size: 0.8em;
+    font-family: 12px;
+    letter-spacing: 0.05em;
+    line-height: 2;
 }
 
 .corp-section-container {
   width: 95%;
   max-height: 70%;
   padding: 2%;
-  margin-top: 20%;
+  margin-top: 15%;
   position: absolute;
   /* border: 5px solid red; */
 }
@@ -620,7 +621,7 @@ p#launch-party {
 
 @media all and (min-width: 760px) {
 
-    .hamburger-container {
+    #hamburger-btn {
       display: none;
     }
     #open {
@@ -632,6 +633,7 @@ p#launch-party {
       right:2px;
       margin-top: 20%;
       transform: scale(1.1);
+
 
     }
 
@@ -686,7 +688,7 @@ p#launch-party {
               }
 
               #landing-visual {
-                margin-top: 20%;
+                margin-top: 10%;
                 max-height: 140px;
                 margin-bottom: 10%;
               }
@@ -705,14 +707,19 @@ p#launch-party {
               margin-top: 27%;
             }
 
+            h1#corporate-header {
+              font-size: 2.4em;
+            }
+
             .corp-section-container {
               width: 95%;
               max-height: 70%;
               padding: 2%;
-              margin-top: 50%;
+              margin-top: 25%;
               position: absolute;
               /* border: 5px solid red; */
             }
+
 
               p#how{
                 font-size: 0.6em;
@@ -781,8 +788,8 @@ p#launch-party {
                   display: block;
                   width:100%;
                   /* border: 1px solid red; */
-                  top:110vh;
-                  margin-top:10%;
+                  top:90vh;
+                  margin-top:25%;
                   margin-bottom:10%;
                 /* display: block; */
                 /* position: absolute; */
@@ -796,7 +803,7 @@ p#launch-party {
 
               #container {
                   width: 100%;
-                  height: 105vh;
+                  height: 125vh;
                   left:2px;
                   overflow-y: hidden;
               }
@@ -840,40 +847,57 @@ p#launch-party {
 
               }
 
-              .hamburger-container {
-                z-index: 2;
-                float:right;
-                position: absolute;
-                top:2vh;
-                padding: 10px;
-                right: 2px;
+              #open {
+                border: none;
+                background: none;
+                color:black;
               }
 
+              #hamburger-btn {
+                /* background-color: red; */
+                position:fixed;
+                right: 2px;
+                padding: 20px;
+                top:0;
+                transform: scale(2);
+                z-index: 2;
+              }
+
+/*
               #open {
                border: none;
                background: none;
                color:black;
-               transform: scale(1.7);
-
-              }
+               float:right;
+               transform: scale(2.5);
+              } */
 
               #countdown {
                 transform: scale(1);
                 width: 100%;
-
               }
 
-              #howitworks {margin-top: 200vh;width:100%;height: 500px; padding: 12px;}
-              #about {margin-top: 100%;height:500px;color: #fff; background-color: #F3AE59}
-              #corporate {margin-top: 15%;height:500px;color: #fff; background-color: #F7C990;}
-              #participant {margin-top: 15%;height:500px;color: #fff; background-color: #FADEBC;}
-
+              #howitworks {margin-top: 180vh;width:100%;height: 500px; padding: 12px;}
+              #about {margin-top: 100%;height:500px;background-color: #F3AE59}
+              #corporate {margin-top: 15%;height:500px;ackground-color: #F7C990;}
+              #participant {margin-top: 15%;height:500px;background-color: #FADEBC;}
 
 
             }
 
-                  @media all and (max-width: 550px) {
+                  @media all and (max-width: 400px) {
+
+
                   	     #howitworks {margin-top: 160vh;width:90%;height: 500px; padding: 12px;}
+                         #about {margin-top: 150%;height:500px;background-color: #F3AE59}
+                         #corporate {margin-top: 15%;height:500px;ackground-color: #F7C990;}
+                         #participant {margin-top: 15%;height:500px;background-color: #FADEBC;}
+
+                       .section-container{
+                          margin-top: 55%;
+                       }
+
+
                   }
 
 

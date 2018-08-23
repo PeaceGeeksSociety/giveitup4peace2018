@@ -112,7 +112,7 @@
 
 
     <div id="about" class="container-fluid">
-        <h1 id="abt-header"> Why Give It Up? </h1>
+        <h1 id="abt-header"> Why Give it Up? </h1>
 
           <div class="section-container">
           <div class="section-content">
@@ -175,19 +175,20 @@
       <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HAMBURGER NAVIGATION  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` `-->
 
 
-          <div class="hamburger-container">
               <div id="hamburger" class="overlay">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
               <div class="overlay-content">
                 <a href="index.html"> Home </a>
-                <a href="#about"> About </a>
+                <a href="#about"> Why Participate  </a>
                 <a href="#howitworks"> How it Works</a>
                 <a href="#corporate"> Corporate Teams </a>
-                <a href="#participant"> Participants </a>
+                <a href="#participant"> Pledges </a>
               </div>
-              </div>
+            </div>
 
-              <button onclick="openNav()" id="open">&#9776;</button>
+              <div id="hamburger-btn">
+                <button onclick="openNav()" id="open">&#9776;</button>
+              </div>
 
               <script>
               function openNav() {
@@ -293,7 +294,7 @@
                   // Get the navbar
                   var navbar = document.getElementById("navbar");
                   var navToggle = document.getElementById("nav-toggle");
-                  var hamburger = document.getElementById("hamburger");
+                  var hamburger = document.getElementById("hamburger-btn");
 
                   // Get the offset position of the navbar
                   var sticky = navbar.offsetTop;
@@ -309,7 +310,7 @@
                     } else {
                       navbar.classList.remove("sticky");
                       navToggle.classList.remove("sticky");
-                      hamburger.classList.add("sticky")
+                      hamburger.classList.remove("sticky")
                     }
                   }
               </script>
