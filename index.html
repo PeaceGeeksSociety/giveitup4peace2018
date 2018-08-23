@@ -6,7 +6,7 @@
     <title> #GiveItUp4Peace </title>
 		<meta name="peace-tech" content=" Using technology for good " />
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./ScrollMagic.min.js"></script>
@@ -18,18 +18,23 @@
 
   <body>
 
+    <script type="text/javascript">(function(o){var b="https://api.autopilothq.com/anywhere/",t="6512a449a37e4e9c8f8beac5f5f8ce8f805bf0cf9f834e81a0012b370027d3ff",a=window.AutopilotAnywhere={_runQueue:[],run:function(){this._runQueue.push(arguments);}},c=encodeURIComponent,s="SCRIPT",d=document,l=d.getElementsByTagName(s)[0],p="t="+c(d.title||"")+"&u="+c(d.location.href||"")+"&r="+c(d.referrer||""),j="text/javascript",z,y;if(!window.Autopilot) window.Autopilot=a;if(o.app) p="devmode=true&"+p;z=function(src,asy){var e=d.createElement(s);e.src=src;e.type=j;e.async=asy;l.parentNode.insertBefore(e,l);};y=function(){z(b+t+'?'+p,true);};if(window.attachEvent){window.attachEvent("onload",y);}else{window.addEventListener("load",y,false);}})({});</script>
+
+
 
       <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TOP  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` `-->
     <header id="#top">
-                 <!-- ~~~~~~~~~~~~~~~~ NAV TOGGLE  ~~~~~~~` `-->
 
+      <div id="nav-container">
         <div id="nav-toggle">
-          <div id="high1">HOW IT WORKS</div>
-          <div id="high2"> WHY PARTICIPATE  </div>
-          <div id="high3">CORPORATE  TEAMS</div>
-          <div id="high4">PLEDGERS</div>
-        </div>
-
+        <div id="pg-logo"></div>
+        <div id="high1"> HOW IT WORKS </div>
+        <div id="high2"> WHY PARTICIPATE  </div>
+        <div id="high3">CORPORATE TEAMS </div>
+        <div id="high4">PLEDGERS</div>
+      </div>
+    </div>
+                 <!-- ~~~~~~~~~~~~~~~~ NAV TOGGLE  ~~~~~~~` `-->
 
       <div id="navbar">
 
@@ -39,7 +44,6 @@
                           <a href="#corporate">CORPORATE TEAMS </a>
                               <a href="#participant"> PARTICIPANT INFO </a> -->
                                   <a href="https://peacegeeks.org/donate" id="donate-link"> DONATE </a>
-
               </div>
 
       </header>
@@ -49,7 +53,7 @@
       <!-- DESKTOP -->
       <div id="landing-vid-container">
       <div class="landing-video">
-        <video id="myVideo" poster="./photos/pg-youth-day1.png" controls preload="none" >
+        <video id="myVideo" poster="./photos/videobg.jpg" controls preload="none" >
         <source src="./videos/teaser.mp4" type="video/mp4">
         </video>
       </div>
@@ -58,7 +62,7 @@
 
       <!-- MOBILE ----->
       <div id="landing-visual">
-        <video id="myVideo" poster="./photos/pg-youth.png" controls preload="none">
+        <video id="myVideo" poster="./photos/videobg.jpg" controls preload="none">
         <source src="./videos/teaser.mp4" type="video/mp4">
         </video>
       </div>
@@ -66,7 +70,10 @@
 
       <div id="logo-small"></div>
 
+      <!-- <div id="banner"> </div> -->
+
       <div id="howitworks" class="container-fluid">
+        <h1> How It Works </h1>
             <div class="row">
               <div class="column">
               <div id="how-1">
@@ -105,31 +112,53 @@
 
 
     <div id="about" class="container-fluid">
-        <h4> ABOUT </h4>
-      <!-- <div id="abt-paragraph"><p><a href="www.peacegeeks.org"> PeaceGeeks </a> is a Vancouver-based nonprofit that works with communities to develop the digital tools they need to strengthen peacebuilding and humanitarian response at home and abroad — and we want YOU to join us in making a difference!
-
-      #GiveItUp4Peace is our annual challenge from Oct. 1-31. In solidarity with communities that have given up everything in pursuit of peace, we ask you to give up one thing you “can’t live without” for all of October, and raise vital funds to support these communities in the process.
+        <h1 id="abt-header"> About </h1>
+          <div class="section-container">
 
 
-      In 2016, you gave up things like sugar, driving and coffee, and raised over $30,000 to help launch PeaceGeeks’ Services Advisor web app for the UN Refugee Agency, connecting the 3+ million refugees in Jordan and Turkey to the humanitarian services they need most.
+        <div class="section-content">
 
-      This year, our goal is to raise $45,000. Your funds raised will support projects like the Pathways app that helps newcomers settle in Canada, and Meshkat Community which empowers the next generation of digital peacebuilders in Jordan to combat hate and violence online.
+          <button id="abt-giu4p" onclick="showGIU4P()"> #GiveItUp4Peace </button>
+          <button id="abt-pgeeks" onclick="showPG()"> PeaceGeeks </button>
+          <div id="giu4pDIV">
 
-      Anyone in the world is welcome to join, whether you want to Give It Up alone or get a team of friends or colleagues together to do so. There’s no minimum fundraising amount to participate and you’ll be supported every step of the way with:
+          <p><b>#GiveItUp4Peace</b> is our annual challenge from Oct. 1-31. In solidarity with communities that have given up everything in pursuit of peace, we ask you to give up one thing you “can’t live without” for all of October, and raise vital funds to support these communities in the process.</p>
+<!--
+            <p>In 2016, you raised over $30,000 to help launch the Services Advisor web app for the UNHCR, connecting the 3+ million refugees in Jordan and Turkey to the humanitarian services they need most. </p>
 
-      A personal fundraising page
-      Motivational tips and incentives for your fundraising milestones
-      Social media shareables
-      Invitation to our launch party on Sep. 27 [hyperlink: giveitup4peace2018.eventbrite.ca]
+            <p>This year, our goal is to raise $45,000. Your funds raised will support projects like the Pathways app that helps newcomers settle in Canada, and Meshkat Community which empowers the next generation of digital peacebuilders in Jordan to combat hate and violence online.</p> -->
 
-      Register today [hyperlink] or contact us for more info at fundraising@peacegeeks.org !</p>
-    </div> -->
+        </div>
+
+        <div id="pgDIV">
+          <p><a href="www.peacegeeks.org">PeaceGeeks </a>is a Vancouver-based nonprofit that works with communities to develop the digital tools they need to strengthen peacebuilding and humanitarian response at home and abroad — and we want YOU to join us in making a difference!</p>
+
+          </div>
+        </div>
+
+      </div>
+
+
     </div>
-    <div id="corporate" class="container-fluid">
-      <h4>CORPORATE</h4>
+
+    <div id="corporate">
+      hi
+
+              <!-- <div class="section-container">
+                <div class="section-content">
+
+              <p>Join other leading companies and organizations in giving it up and making a positive impact for refugees, immigrants and communities at risk of conflict! #GiveItUp4Peace is a great way to propel tech for peace and humanitarian action, while engaging employees in a fun and competitive challenge.</p><br>
+
+
+              There are varying levels of commitment and many ways to get involved. If your organization or one you know are interested in partnering with PeaceGeeks for #GiveItUp4Peace, register above [hyperlink] or contact Cherrie [hyperlink mailto:cherrie@peacegeeks.org]
+            </div>
+
+            </div> -->
+
     </div>
-    <div id="participant" class="container-fluid">
-      <h4>PARTICIPANTS</h4>
+
+    <div id="participant">
+        PARTCIPANT
     </div>
 
       <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HAMBURGER NAVIGATION  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` `-->
@@ -170,6 +199,7 @@
                <!-- TOP HALF CONTENT (Logo, Donate Button, Social Media, Nav Bar, Countdown)-->
                <div id="top-half">
                        <div id="logo-big"></div>
+                       <!-- <div id="pg-logo"></div> -->
                           <div id="th-container">
                             <div id="countdown">
                                         <li><span id="days">0</span>days</li>
@@ -206,31 +236,20 @@
                           </div>
 
 
-                  <!-- TODO: Change button class background image to an SVG -->
-                 <!-- <div id="donate-btn">
-
-                     <a href="https://peacegeeks.org/donate"><button class="donate"> DONATE </button></a>
-
-                 </div> -->
-
               </div>
 
-                   <!-- TODO: media query for mobile/tablet -->
-
-
-                 <!-- BOTTOM HALF CONTENT (Content Copy and related assets)-->
                  <div id="bottom-half">
 
                    <div id="p-container">
 
 
-                     <p id="landing-paragraph">
-                       Every day, conflict and crisis force people to give up their life as they know it. In a time of increasing polarization in digital spaces, the world needs more peacebuilders than ever before. <br><br>
+                      <p id="header">This October, #GiveItUp4Peace!
+                        Give up something for the month and raise money to help communities at risk use tech for peace. </p>
 
-                       Join us in helping make a difference for communities facing displacement, conflict and crisis worldwide. <br>
+                       <p id="text">Every day, conflict and crisis force people to give up their life as they know it. In a time of increasing polarization in digital spaces, the world needs more peacebuilders than ever before. <br><br>
 
-                       <h4>This October, #GiveItUp4Peace!<br>
-                       Give up something for the month and raise money to help communities at risk use tech for peace. <br></h4>
+                       Join us in helping make a difference for communities facing displacement, conflict and crisis worldwide.
+                     </p><br>
 
                      </p>
 
@@ -242,13 +261,14 @@
                                    <a class="typeform-share button" href="https://peacegeeks.typeform.com/to/zYSUJY" data-mode="popup" id="sign-up"target="_blank">&nbsp; &nbsp;SIGN UP ON MY OWN&nbsp; &nbsp;</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 
                                  </center>
-                     <!-- <button id="sign-up">SIGN UP AS A TEAM </button>
-                     <button id="sign-up">SIGN UP ON MY OWN</button> -->
+
 
                      </div>
                  </div>
 
            </div>
+
+
          </div>
 
          <!-- <section id="#about"> </section> -->
@@ -262,20 +282,23 @@
                   // Get the navbar
                   var navbar = document.getElementById("navbar");
                   var navToggle = document.getElementById("nav-toggle");
+                  var hamburger = document.getElementById("hamburger");
 
                   // Get the offset position of the navbar
                   var sticky = navbar.offsetTop;
                   var sticky = navToggle.offsetTop;
+                  var sticky = hamburger.offsetTop;
                   // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
                   function myFunction() {
                     if (window.pageYOffset >= sticky) {
                       navbar.classList.add("sticky")
                       navToggle.classList.add("sticky")
+                      hmaburger.classList.add("sticky")
 
                     } else {
                       navbar.classList.remove("sticky");
                       navToggle.classList.remove("sticky");
-
+                      hamburger.classList.add("sticky")
                     }
                   }
               </script>
@@ -305,7 +328,33 @@
                   </script>
 
 
-      <!-- <div class="footer"> </div> -->
+                  <script>
+                    function showPG() {
+                      var x = document.getElementById("giu4pDIV");
+                      x.style.display = "none";
+
+                      var y = document.getElementById("pgDIV");
+                      y.style.display = "inline";
+
+                  }
+
+                  function showGIU4P() {
+
+                    var k = document.getElementById("pgDIV");
+                      if (k.style.display === "inline") {
+                      k.style.display = "none";
+                    } else {
+                      k.style.display = "none";
+                      }
+
+
+                      var k = document.getElementById("giu4pDIV");
+                      k.style.display = "inline";
+                  }
+                    </script>
+
+
+      <div id="footer"> </div>
 
 
   </body>
