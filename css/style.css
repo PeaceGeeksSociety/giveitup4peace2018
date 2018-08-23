@@ -24,6 +24,13 @@
 }
 
 
+ul.a {
+    list-style-type: circle;
+    max-width: 380px;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
 h1 {
   font-family: poppinsRegular;
   color:#F3AE59;
@@ -50,24 +57,13 @@ h1#corporate-header {
   position: absolute;
 }
 
-p#corp-para {
-  padding: 50px 0;
-  background-color: none;
-  color: black;
-  display: inline;
-  font-size: 0.8em;
-  font-family: 12px;
-  letter-spacing: 0.05em;
-  line-height: 2;
-}
-
 .container-fluid {
   background-color: white;
 }
 
 #howitworks {margin-top: 48vh;width:100%;max-height:200px;background-color:white;}
 #about {margin-top:30%;height:550px;background-color:#F3AE59;}
-#corporate {margin-top:5%;height:550px;background-color: #F7C990;}
+#corporate {margin-top:5%;height:750px;background-color: #F7C990;}
 #participant {margin-top:5%;height:550px;background-color: #FADEBC;}
 
 
@@ -115,7 +111,7 @@ p#corp-para {
   width: 550px;
   z-index: 1;
   left: 7vw;
-  padding-right: 10px;
+  padding-right: 50%;
 }
 
 #pg-logo {
@@ -254,6 +250,7 @@ p#corp-para {
   height: 50px;
   background-position: right;
   transform: scale(1.8);
+
 }
 
 #how-3 {
@@ -285,6 +282,10 @@ p#corp-para {
   background-position: right;
   transform: scale(1.8);
 }
+
+
+/* - - - - - - - slide show - - - - - - - - - - - - - /*
+
 
 /* - - - - - - - - - - -  navbar - - - - - - - - - -  /*
 
@@ -334,7 +335,7 @@ html {
 
 }
 
-:link { color: #ffcb2f; }
+ :link { color: white; }
 :visited { color: #ffcb2f; }
 
 *,a {
@@ -342,6 +343,9 @@ html {
   text-decoration: none;
 }
 
+p {
+  padding-right: 30px;
+}
 
 h2{
     font-family: poppinsRegular;
@@ -420,7 +424,7 @@ body {
 p#launch-party {
   font-size: 0.8em;
   position: absolute;
-  right: 66px;
+  right: 0px;
 }
 /*
 #launch-party-btn {
@@ -472,7 +476,7 @@ p#launch-party {
   position: absolute;
   left: 45%;
   width: 52%;
-  top: 5vh;
+  top: 3vh;
   height: 100vh;
   /* border: 3px solid red; */
   /* overflow-y: none; */
@@ -549,71 +553,228 @@ p#launch-party {
 
 /*- - - - - - - - - - - - - - - - -  about section styling - - - - - - - - - - - - - - - - - - - - - */
 
-.section-container {
+.abt-section-container {
   width: 95%;
-  max-height: 70%;
+  height: 70%;
   padding: 2%;
-  margin-top: 15%;
   position: absolute;
-  /* border: 5px solid red; */
+  /* border: 5px solid green; */
 }
 
 
 .section-content {
-  max-width: 300px;
+  margin-top: 7%;
+  width: 99%;
   display: inline-block;
   position: absolute;
+  left:1px;
+  height: 70%;
   /* overflow-y: scroll; */
   /* border: 5px solid black; */
 }
 
-#abt-giu4p {
-  display: inline;
+/* Style the buttons */
+.btn {
   border: none;
-  background-color: white;
+  outline: none;
+   padding: 12px 16px;
+   background-color: #f1f1f1;
+   cursor: pointer;
+   font-family: poppinsBold;
+   margin-left: 2%;
+
+}
+
+.btn:hover {
+  background-color: #FFC12F;
+  color: white;
+}
+
+/* #abt-giu4p {
+  display: inline-block;
+  border: none;
+  width: 200px;
   padding:12px;
   margin-right: 2%;
+  background: none;
+    transform: scale(1.2);
   font-family: poppinsBold;
 }
 
 #abt-pgeeks {
-  display: inline;
+  width: 200px;
+  display: inline-block;
   border: none;
-  background-color: white;
   padding: 12px;
+  background: none;
   font-family: poppinsBold;
-}
+  transform: scale(1.2);
+} */
 
 #giu4pDIV {
-    padding: 50px 0;
+    /* padding: 50px 0; */
     background-color: none;
     color: black;
-    display: inline;
+    display: inline-flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    max-width: 1000px;
     font-size: 0.8em;
+    padding: 50px;
     font-family: 12px;
     letter-spacing: 0.05em;
     line-height: 2;
 }
 
 #pgDIV {
-    padding: 50px 0;
-    display: none;
-    background-color: none;
-    color: black;
-    font-size: 0.8em;
-    font-family: 12px;
-    letter-spacing: 0.05em;
-    line-height: 2;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: none;
+  color: black;
+  display: none;
+  text-align: center;
+  max-width: 1000px;
+  font-size: 0.8em;
+  padding: 50px;
+  font-family: 12px;
+  letter-spacing: 0.05em;
+  line-height: 2;
 }
 
 .corp-section-container {
   width: 95%;
-  max-height: 70%;
   padding: 2%;
-  margin-top: 15%;
+  /* margin-top: 15%; */
   position: absolute;
-  /* border: 5px solid red; */
+  height: 90%;
 }
+
+.corp-section-content {
+  margin-top: 8%;
+  width: 40%;
+  padding: 3%;
+  display: inline-block;
+  max-height: 300px;
+  /* overflow-y: scroll; */
+  /* border: 5px solid black; */
+}
+
+p#corp-para {
+  max-width: 400px;
+  padding: 50px 0;
+  background-color: none;
+  color: black;
+  display: inline;
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+  line-height: 2;
+}
+
+
+#spons-para {
+  display: block;
+  max-width: 300px;
+  font-size: 0.8em;
+  margin-left: 3%;
+  letter-spacing: 0.02em;
+  line-height: 1.8;
+
+}
+
+b#sponsorship {
+  font-size: 1.3em;
+  line-height: 2.5;
+}
+
+/* p#spons-para {
+  max-width: 200px;
+  padding: 50px 0;
+  background-color: none;
+  color: black;
+  display: inline;
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+  line-height: 2;
+} */
+
+li {
+  font-size: 0.8em;
+  line-height: 2;
+  letter-spacing: 0.02em;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #FFC12F;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
 
 
 /* - - - - - - -  - - - - - - - - - - - - - - -- - - - - media queries  - - - - - - - - - - - - - - -  - - - - - - - - - */
@@ -639,7 +800,6 @@ p#launch-party {
 
   }
 
-
 @media all and (max-width: 1100px) {
 
   #top-half{
@@ -654,7 +814,7 @@ p#launch-party {
   }
 
   #bottom-half {
-    top: -19vh;
+    top: -18vh;
     /* border: 2px solid green; */
 
   }
@@ -698,13 +858,18 @@ p#launch-party {
               }
 
              #howitworks {margin-top: 90vh;width:100%;height: 500px; padding: 12px;}
-             #about {margin-top: 100%;height:500px;color: #fff; background-color: #F3AE59}
+             #about {margin-top: 100%;height:800px;}
         }
 
             @media all and (max-width: 760px) {
 
-            .section-container{
-              margin-top: 27%;
+            .abt-section-container{
+              height: 65%;
+            }
+
+            .section-content {
+              margin-top: 20%;
+              width: 100%;
             }
 
             h1#corporate-header {
@@ -713,11 +878,13 @@ p#launch-party {
 
             .corp-section-container {
               width: 95%;
-              max-height: 70%;
+              height: 50%;
               padding: 2%;
-              margin-top: 25%;
               position: absolute;
-              /* border: 5px solid red; */
+            }
+
+            .corp-section-content {
+              margin-top: 10%;
             }
 
 
@@ -788,7 +955,7 @@ p#launch-party {
                   display: block;
                   width:100%;
                   /* border: 1px solid red; */
-                  top:90vh;
+                  top:105vh;
                   margin-top:25%;
                   margin-bottom:10%;
                 /* display: block; */
@@ -833,7 +1000,7 @@ p#launch-party {
               }
 
               #bottom-half {
-                top: -28vh;
+                top: -24vh;
                 /* border: 2px solid black; */
               }
 
@@ -878,8 +1045,8 @@ p#launch-party {
               }
 
               #howitworks {margin-top: 180vh;width:100%;height: 500px; padding: 12px;}
-              #about {margin-top: 100%;height:500px;background-color: #F3AE59}
-              #corporate {margin-top: 15%;height:500px;ackground-color: #F7C990;}
+              #about {margin-top: 100%;height:1100px;background-color: #F3AE59}
+              #corporate {margin-top: 15%;height:1000px;background-color: #F7C990;}
               #participant {margin-top: 15%;height:500px;background-color: #FADEBC;}
 
 
@@ -889,12 +1056,20 @@ p#launch-party {
 
 
                   	     #howitworks {margin-top: 160vh;width:90%;height: 500px; padding: 12px;}
-                         #about {margin-top: 150%;height:500px;background-color: #F3AE59}
-                         #corporate {margin-top: 15%;height:500px;ackground-color: #F7C990;}
+                         #about {margin-top: 150%;height:1100px;background-color: #F3AE59}
+                         #corporate {margin-top: 15%;height:1000px;background-color: #F7C990;}
                          #participant {margin-top: 15%;height:500px;background-color: #FADEBC;}
 
-                       .section-container{
-                          margin-top: 55%;
+                       .abt-section-container{
+                        height: 65%;
+                       }
+
+                       .corp-section-container {
+                         height: 55%;
+                       }
+
+                       .section-content {
+                        margin-top: 25%;
                        }
 
 
@@ -910,7 +1085,7 @@ p#launch-party {
    /* border: 1px solid black; */
  }
 
-    li {
+    li#cd {
       display: inline-block;
       font-size: 0.5em;
       list-style-type: none;
@@ -918,12 +1093,10 @@ p#launch-party {
       text-transform: uppercase;
     }
 
-    li span {
+    li#cd span {
       display: block;
       font-size: 2.1rem;
     }
-
-
 
 
 /* -----------------social media icons --------------------------------*/
