@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script type="text/javascript">(function(o){var b="https://api.autopilothq.com/anywhere/",t="6512a449a37e4e9c8f8beac5f5f8ce8f805bf0cf9f834e81a0012b370027d3ff",a=window.AutopilotAnywhere={_runQueue:[],run:function(){this._runQueue.push(arguments);}},c=encodeURIComponent,s="SCRIPT",d=document,l=d.getElementsByTagName(s)[0],p="t="+c(d.title||"")+"&u="+c(d.location.href||"")+"&r="+c(d.referrer||""),j="text/javascript",z,y;if(!window.Autopilot) window.Autopilot=a;if(o.app) p="devmode=true&"+p;z=function(src,asy){var e=d.createElement(s);e.src=src;e.type=j;e.async=asy;l.parentNode.insertBefore(e,l);};y=function(){z(b+t+'?'+p,true);};if(window.attachEvent){window.attachEvent("onload",y);}else{window.addEventListener("load",y,false);}})({});</script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> #GiveItUp4Peace </title>
 		<meta name="peace-tech" content=" Using technology for good " />
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./ScrollMagic.min.js"></script>
-    <script src="./debug.addIndicators.min.js"></script>
+    <!-- <script src="./debug.addIndicators.min.js"></script> -->
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
     <script src="./js/yscountdown.min.js"></script>
     <script  src="js/yscountdown.js"></script>
@@ -18,38 +18,65 @@
 
   <body>
 
-    <script type="text/javascript">(function(o){var b="https://api.autopilothq.com/anywhere/",t="6512a449a37e4e9c8f8beac5f5f8ce8f805bf0cf9f834e81a0012b370027d3ff",a=window.AutopilotAnywhere={_runQueue:[],run:function(){this._runQueue.push(arguments);}},c=encodeURIComponent,s="SCRIPT",d=document,l=d.getElementsByTagName(s)[0],p="t="+c(d.title||"")+"&u="+c(d.location.href||"")+"&r="+c(d.referrer||""),j="text/javascript",z,y;if(!window.Autopilot) window.Autopilot=a;if(o.app) p="devmode=true&"+p;z=function(src,asy){var e=d.createElement(s);e.src=src;e.type=j;e.async=asy;l.parentNode.insertBefore(e,l);};y=function(){z(b+t+'?'+p,true);};if(window.attachEvent){window.attachEvent("onload",y);}else{window.addEventListener("load",y,false);}})({});</script>
-
-
-
-      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TOP  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` `-->
-    <header id="#top">
-
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TOP  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` `-->
+  <header id="#top">
+      <div id="mobile-logo"></div>
       <div id="nav-container">
-        <div id="nav-toggle">
-        <div id="pg-logo"></div>
-        <div id="high1"> HOW IT WORKS </div>
-        <div id="high2"> WHY PARTICIPATE  </div>
-        <div id="high3"> CORPORATE TEAMS </div>
-        <div id="high4"> PLEDGERS</div>
-      </div>
-    </div>
-                 <!-- ~~~~~~~~~~~~~~~~ NAV TOGGLE  ~~~~~~~` `-->
-
-      <div id="navbar">
-
-        <a href="#top" id="sign-up-link"> SIGN UP </a>
-            <!-- <a href="#howitworks"> HOW IT WORKS</a>
-                      <a href="#about">ABOUT</a>
-                          <a href="#corporate">CORPORATE TEAMS </a>
-                              <a href="#participant"> PARTICIPANT INFO </a> -->
-                                  <a href="https://peacegeeks.org/donate" id="donate-link"> DONATE </a>
+             <!-- ~~~~~~~~~~~~~~~~ NAV TOGGLE  ~~~~~~~~~~-->
+                <div id="nav-toggle">
+                <div id="pg-logo"></div>
+                <div id="high1"> HOW IT WORKS </div>
+                <div id="high2"> WHY PARTICIPATE  </div>
+                <div id="high3"> CORPORATE TEAMS </div>
+                <div id="high4"> PLEDGERS</div>
               </div>
+        </div>
 
-      </header>
+       <!-- ~~~~~~~~~~~~~~~~ STICKY DONATE/SIGN UP ~~~~~~~ -->
+      <div id="navbar">
+        <a href="#top" id="sign-up-link"> SIGN UP </a>
+        <a href="https://peacegeeks.org/donate" id="donate-link"> DONATE </a>
+      </div>
 
-      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ LANDING TEASER VIDEO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- ~~~~~~~~~~~~~~~~ SOCIAL MEDIA BAR ~~~~~~~ -->
+      <div class="social-media">
+       <div class="icon-bar">
+       <a href="https://www.facebook.com/peacegeeks" class="facebook"><i class="fa fa-facebook"></i></a>
+       <a href="https://twitter.com/PeaceGeeks?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter"><i class="fa fa-twitter"></i></a>
+       <a href="https://www.youtube.com/channel/UCCICyG1WPmGJ-r5WUr-tMmw" class="youtube"><i class="fa fa-youtube"></i></a>
+     </div>
+   </div>
+  </header>
 
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HAMBURGER NAVIGATION  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` `-->
+
+            <div id="hamburger" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="index.html" onclick="closeNav()"> Home </a>
+              <a href="#about" onclick="closeNav()"> Why Participate  </a>
+              <a href="#howitworks" onclick="closeNav()"> How it Works</a>
+              <a href="#corporate" onclick="closeNav()"> Corporate Teams </a>
+              <a href="#participant" onclick="closeNav()"> Pledges </a>
+            </div>
+          </div>
+
+            <div id="hamburger-btn">
+              <button onclick="openNav()" id="open">&#9776;</button>
+            </div>
+
+            <script>
+            function openNav() {
+                  document.getElementById("hamburger").style.height = "100%";
+              }
+
+              function closeNav() {
+                  document.getElementById("hamburger").style.height = "0%";
+              }
+            </script>
+          </div>
+
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ LANDING TEASER VIDEO  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <!-- DESKTOP -->
       <div id="landing-vid-container">
       <div class="landing-video">
@@ -60,144 +87,163 @@
     </div>
 
 
-      <!-- MOBILE ----->
-      <div id="landing-visual">
-        <video id="myVideo" poster="./photos/videobg.jpg" controls preload="none">
-        <source src="./videos/teaser.mp4" type="video/mp4">
-        </video>
-      </div>
+    <!-- MOBILE ----->
+    <div id="landing-visual">
+      <video id="myVideo" poster="./photos/videobg.jpg" controls preload="none">
+      <source src="./videos/teaser.mp4" type="video/mp4">
+      </video>
+    </div>
 
-
-      <div id="logo-small"></div>
-
-      <!-- <div id="banner"> </div> -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HOW IT WORKS(DESKTOP) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
       <div id="howitworks" class="container-fluid">
+        <div id="howitworks-desktop">
         <h1> How It Works </h1>
             <div class="row">
               <div class="column">
-              <div id="how-1">
-                  <div id="how-icon-1"></div>
-              </div>
+              <img id="how-imgs-s" src="./photos/step1-s.png"></img>
+                  <!-- <div id="how-icon-1"></div> -->
               <h2>Register</h2>
-
                 <p id="how"> Sign up on your own or with a team!  </p>
-
               </div>
 
               <div class="column">
-                <div id="how-2">
-                    <div id="how-icon-2"></div>
-                  </div>
+                <img id="how-imgs-s" src="./photos/step2-s.png"></img>
                 <h2>Pick Something</h2>
 
                 <p id="how"> Decide what you will give up for the month of October. <a href=""> Need ideas? </a></p>
 
               </div>
               <div class="column">
-                <div id="how-3">  <div id="how-icon-3"></div></div>
+              <img id="how-imgs-s" src="./photos/step3-s.png"></img>
                 <h2>Fundraise</h2>
                 <p id="how"> Set a fundraising goal and encourage your friends and family to support. </p>
 
               </div>
               <div class="column">
-                <div id="how-4">  <div id="how-icon-4"></div> </div>
+              <img id="how-imgs-s" src="./photos/step4-s.png"></img>
                 <h2>Give It Up</h2>
                 <p id="how"> From October 1-31, complete your Give It Up challenge every day. Share your journey using <a href="#participants">#GiveItUp4Peace</a></p>
                 <br><br>
               </div>
             </div>
-          </div>
+        <!-- </div> -->
+      </div>
+    </div>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HOW IT WORKS(MOBILE) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
+    <div id="howitworks-mobile">
+      <div id="wrapper">
+        <h1> How It Works </h1>
+      <table>
+        <tr>
+          <td><img id="how-imgs" src="./photos/step1.png"></img></td>
+          <td>  <p id="how"> Sign up on your own or with a team! </p></td>
+        </tr>
+        <tr>
+          <td><img id="how-imgs" src="./photos/step2.png"></td>
+          <td>  <p id="how"> Decide what you will give up for the month of October. <a href=""> Need ideas? </a></p></td>
+        </tr>
+        <tr>
+          <td><img id="how-imgs" src="./photos/step3.png"></td>
+          <td><p id="how"> Set a fundraising goal and encourage your friends and family to support. </p></td>
+        </tr>
+        <tr>
+          <td><img id="how-imgs" src="./photos/step4.png"></td>
+          <td><p id="how"> From October 1-31, complete your Give It Up challenge every day. Share your journey using <a href="#participants">#GiveItUp4Peace</a></p></td>
+        </tr>
+        <tr>
 
+      </table>
+    </div>
+    </div>
 
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT SECTION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <div id="about" class="container-fluid">
-        <h1 id="abt-header"> WHAT TO NAME THIS  </h1><br>
+        <h1 id="abt-header"> Why #GiveItUp4Peace? </h1><br>
 
           <div class="abt-section-container">
           <div class="section-content">
-            <div id="myDIV">
+          <div id="about-button-alignment">
           <button class="btn active" id="abt-giu4p" onclick="showGIU4P()"> #GiveItUp4Peace </button>
-          <button class="btn" id="abt-pgeeks" onclick="showPG()"> Who is PeaceGeeks? </button>
+          <button class="btn" id="abt-pgeeks" onclick="showPG()"> About PeaceGeeks? </button>
         </div>
           <div id="giu4pDIV">
 
-          <p><b>#GiveItUp4Peace</b> is our annual challenge from Oct. 1-31. In solidarity with communities that have given up everything in pursuit of peace, we ask you to give up one thing you “can’t live without” for all of October, and raise vital funds to support these communities in the process.</p>
+          <p id="giu4p"><b>#GiveItUp4Peace</b> is our annual challenge from Oct. 1-31. In solidarity with communities that have given up everything in pursuit of peace, we ask you to give up one thing you “can’t live without” for all of October, and raise vital funds to support these communities in the process.</p>
 
-          <p>In 2016, you raised over $30,000 to help launch the Services Advisor web app for the UNHCR, connecting the 3+ million refugees in Jordan and Turkey to the humanitarian services they need most.</p>
+          <p id="giu4p"> In 2016, you raised over $30,000 to help launch the Services Advisor web app for the United Nations Refugee Agency, connecting the 3+ million refugees in Jordan and Turkey to humanitarian services such as food, water, shelter and protection.  </p>
 
-          <p>This year, our goal is to raise $45,000. Your funds raised will support projects like the Pathways app that helps newcomers settle in Canada, and Meshkat Community which empowers the next generation of digital peacebuilders in Jordan to combat hate and violence online.</p>
+          <p id="giu4p">This year, our goal is to raise $45,000. Your funds raised will support projects like the Pathways app that helps newcomers settle in Canada, and Meshkat Community which empowers the next generation of digital peacebuilders in Jordan to combat hate and violence online.</p>
           </div>
 
         <div id="pgDIV">
-          <p><a href="www.peacegeeks.org">PeaceGeeks </a>is a Vancouver-based nonprofit that works with communities to develop the digital tools they need to strengthen peacebuilding and humanitarian response at home and abroad — and we want YOU to join us in making a difference!</p>
-
+          <p id="pg">
+            <a href="www.peacegeeks.org">PeaceGeeks </a>is a Vancouver-based nonprofit that works with communities to develop the digital tools they need to strengthen peacebuilding and humanitarian response at home and abroad — and we want YOU to join us in making a difference!</p>
           </div>
         </div>
 
       </div>
-
-
     </div>
 
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CORPORATE TEAMS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <div id="corporate">
-
       <h1 id="corporate-header"> Corporate Teams  </h1>
 
         <div class="corp-section-container">
               <div class="corp-section-content">
-                <!-- <center> -->
-                <p id="corp-para">
+
+                <p id="corp-para"><br><br>
                 Join other leading companies and organizations in giving it up and making a positive impact for refugees, immigrants and communities at risk of conflict! #GiveItUp4Peace is a great way to propel tech for peace and humanitarian action, while engaging employees in a fun and competitive challenge.
 
-                <button id="more-info"> More Info </button></p><br><br><br>
-
+                <button id="more-info"> More Info </button></p>
+              </div>
+                <div class="corp-section-content">
                 <b>Benefits for corporate teams:</b><br>
-
                 <ul class="a">
                 <li>An online Fundraising Page for your team and designated PeaceGeeks ambassador to help you meet your goals</li>
                 <li>PeaceGeeks can host a Lunch & Learn for your team</li>
                 <li>Opportunities to volunteer with PeaceGeeks</li>
-                <!-- <li>Opportunities for your team’s funds to sponsor major program items, such as a multi-day workshop for youth in under-resourced communities in Jordan to learn digital skills and peace promotion, with possibility to Skype in and see your impact firsthand</li> -->
                 <li>Marketing opportunities and brand visibility</li>
                 <li> And more..! </li>
               </ul>
+            </div>
 
-              </div>
-                    <div class="corp-section-content">
-                                <!-- Slideshow container -->
-                      <div class="slideshow-container">
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SLIDESHOW (QUOTES+IMAGES) FOR TESTIMONIALS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-                        <!-- Full-width slides/quotes -->
-                        <div class="mySlides">
-                          <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
-                          <p class="author">- John Keats</p>
-                        </div>
+              <div class="corp-section-content-2">
+                          <!-- Slideshow container -->
+                <div class="slideshow-container">
 
-                        <div class="mySlides">
-                          <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-                          <p class="author">- Ernest Hemingway</p>
-                        </div>
-
-                        <div class="mySlides">
-                          <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-                          <p class="author">- Thomas A. Edison</p>
-                        </div>
-
-                        <!-- Next/prev buttons -->
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                      </div>
-
-                      <!-- Dots/bullets/indicators -->
-                      <div class="dot-container">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                      </div>
+                  <!-- Full-width slides/quotes -->
+                  <div class="mySlides">
+                    <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+                    <p class="author">- John Keats</p>
                   </div>
 
-                  <div id="spons-para">
+                  <div class="mySlides">
+                    <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+                    <p class="author">- Ernest Hemingway</p>
+                  </div>
+
+                  <div class="mySlides">
+                    <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                    <p class="author">- Thomas A. Edison</p>
+                  </div>
+
+                  <!-- Next/prev buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <!-- Dots/bullets/indicators -->
+                <div class="dot-container">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+                  <div id="spons-para"><br>
                     <b id="sponsorship"> Interested in Sponsorship?</b><br>
                     Our corporate partners, which include businesses of diverse sizes and industries,
                    are integral to making #GiveItUp4Peace possible, such as sponsoring our Launch Party
@@ -205,66 +251,33 @@
                    (604) 338 6831 for more info.
                   </div>
 
+
+
                 </div>
 
 
 
-
-
-    </div>
+      </div>
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ PARTICIPANT INFO~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <div id="participant">
 
-        <h1 id="pledge-header"> Pledgers </h1>
+        <h1 id="pledge-header"> Social  </h1>
 
           <div class="pledge-section-container">
             <div class="section-content">
-
+              <iframe allowfullscreen="" id="wallsio-iframe" src="https://walls.io/y4c84?nobackground=1&amp;show_header=0" style="border:0;height:60%;width:70%"></iframe>
             </div>
           </div>
 
     </div>
 
-      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HAMBURGER NAVIGATION  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` `-->
-
-
-              <div id="hamburger" class="overlay">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <div class="overlay-content">
-                <a href="index.html"> Home </a>
-                <a href="#about"> Why Participate  </a>
-                <a href="#howitworks"> How it Works</a>
-                <a href="#corporate"> Corporate Teams </a>
-                <a href="#participant"> Pledges </a>
-              </div>
-            </div>
-
-              <div id="hamburger-btn">
-                <button onclick="openNav()" id="open">&#9776;</button>
-              </div>
-
-              <script>
-              function openNav() {
-                    document.getElementById("hamburger").style.height = "100%";
-                }
-
-                function closeNav() {
-                    document.getElementById("hamburger").style.height = "0%";
-                }
-              </script>
-            </div>
-
-          <!-- ~~~~~~~~~~~~~~~~~~~~~~~ MAIN CONTENT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~``-->
-
-          <!-- ~~~~~~~~~~~~~~~~~~~ LANDING PAGE / ABOUT ------------------------------------------------------------->
+          <!-- ~~~~~~~~~~~~~~~~~~~ MAIN ------------------------------------------------------------->
 
           <div id="container">
-
-
                <!-- TOP HALF CONTENT (Logo, Donate Button, Social Media, Nav Bar, Countdown)-->
                <div id="top-half">
                        <div id="logo-big"></div>
-
                           <div id="th-container">
                             <div id="countdown">
                                         <li id="cd"><span id="days">0</span>days</li>
@@ -273,7 +286,7 @@
                                         <li id="cd"><span id="seconds">0</span>Seconds</li>
                                     </div>
 
-                                    <p id="launch-party"> &nbsp;until our <a href="https://www.eventbrite.ca/e/giveitup4peace-launch-party-tickets-49154551587?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing" id="launch-party-btn">Launch Party!</a></p>
+                                    <p id="launch-party">&nbsp;until our <a href="https://www.eventbrite.ca/e/giveitup4peace-launch-party-tickets-49154551587?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing">Launch Party!</a></p>
 
                                <script>
 
@@ -297,16 +310,13 @@
 
                                    });
                                </script>
-
                           </div>
+                    </div>
 
-
-              </div>
-
+          <!-- ~~~~~~~~~~~~~~~~~~~ BOTTOM HALF  (landing page paragraph + sign up buttons )------------------------------------------------------------->
                  <div id="bottom-half">
 
                    <div id="p-container">
-
 
                       <p id="header">This October, #GiveItUp4Peace!
                         Give up something for the month and raise money to help communities at risk use tech for peace. </p>
@@ -330,24 +340,19 @@
 
                      </div>
                  </div>
-
            </div>
-
-
          </div>
 
-         <!-- <section id="#about"> </section> -->
 
-    <script  src="js/index.js"></script>
+         <script  src="js/index.js"></script>
 
               <script>
                         // When the user scrolls the page, execute myFunction
                   window.onscroll = function() {myFunction()};
-
                   // Get the navbar
                   var navbar = document.getElementById("navbar");
                   var navToggle = document.getElementById("nav-toggle");
-                  var hamburger = document.getElementById("hamburger-btn");
+                  var hamburger = document.getElementById("hamburger");
 
                   // Get the offset position of the navbar
                   var sticky = navbar.offsetTop;
@@ -358,7 +363,7 @@
                     if (window.pageYOffset >= sticky) {
                       navbar.classList.add("sticky")
                       navToggle.classList.add("sticky")
-                      hmaburger.classList.add("sticky")
+                      hamburger.classList.add("sticky")
 
                     } else {
                       navbar.classList.remove("sticky");
@@ -368,78 +373,44 @@
                   }
               </script>
 
-
                   <script>
-                    // init controller
-                    var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 500}});
-
-                    // build scenes
-                    new ScrollMagic.Scene({triggerElement: "#howitworks"})
-                            .setClassToggle("#high1", "active")
-                            // .addIndicators()
-                            .addTo(controller);
-                    new ScrollMagic.Scene({triggerElement: "#about"})
-                            .setClassToggle("#high2", "active")
-                            // .addIndicators()
-                            .addTo(controller);
-                    new ScrollMagic.Scene({triggerElement: "#corporate"})
-                            .setClassToggle("#high3", "active")
-                            // .addIndicators()
-                            .addTo(controller);
-                    new ScrollMagic.Scene({triggerElement: "#participant"})
-                            .setClassToggle("#high4", "active")
-                            // .addIndicators()
-                            .addTo(controller);
-                  </script>
 
 
-                  <script>
-                    function showPG() {
+                  function showPG() {
                       var x = document.getElementById("giu4pDIV");
                       x.style.display = "none";
 
                       var y = document.getElementById("pgDIV");
                       y.style.display = "inline-flex";
+                    }
 
-                  }
 
-                  function showGIU4P() {
 
+                  function showGIU4P(x) {
+                    var x = window.matchMedia("(max-width: 760px)")
+                    x.addListener(showGIU4P) // Attach listener function on state changes
+                      //remove peacegeek div
                     var k = document.getElementById("pgDIV");
                       if (k.style.display === "inline") {
                       k.style.display = "none";
                     } else {
                       k.style.display = "none";
-                      }
-
-
-                      var k = document.getElementById("giu4pDIV");
-                      k.style.display = "inline-flex";
-                  }
-                    </script>
-
-                    <script>
-
-                    // Get the container element
-                    var btnContainer = document.getElementById("myDIV");
-
-                    // Get all buttons with class="btn" inside the container
-                    var btns = btnContainer.getElementsByClassName("btn");
-
-                    // Loop through the buttons and add the active class to the current/clicked button
-                    for (var i = 0; i < btns.length; i++) {
-                      btns[i].addEventListener("click", function() {
-                        var current = document.getElementsByClassName("active");
-                        current[0].className = current[0].className.replace(" active", "");
-                        this.className += " active";
-                      });
                     }
-                      </script>
+                    //display giu4pdiv
+                    var k = document.getElementById("giu4pDIV");
+                    if(x.matches) {
+                      k.style.display = "block";
+                    } else {
+                      k.style.display = "inline-flex"
+                    }
+                  }
+
+                </script>
 
 
                       <script>
 
-                                            var slideIndex = 1;
+                      var slideIndex = 1;
                       showSlides(slideIndex);
 
                       function plusSlides(n) {
@@ -467,8 +438,15 @@
                       }
                       </script>
 
+       <div id="footer">
 
-      <div id="footer"> </div>
+          <div id="footer-container">
+
+            <div id="footer-content">PeaceGeeks:  peacegeeks.org | Email: info@peacegeeks.org <br> MORE CONTENT HERE </div>
+
+        </div>
+
+       </div>
 
 
   </body>
